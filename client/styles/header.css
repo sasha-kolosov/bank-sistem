@@ -1,0 +1,37 @@
+@import url('./root.css');
+
+.Header {
+    height: 10vh;
+}
+
+.Header__line {
+    height: 1vh;
+    background-color: var(--header-background);
+}
+
+.Header__menu {
+    height: 8vh;
+    display: flex; 
+}
+
+.Header__menu-logo {
+    flex: 1;
+}
+
+.Header__menu-links {
+    flex: 2;
+    display: flex;
+}
+
+.Header__menu-links-home {
+    flex: 1;
+}
+
+.Header__menu-links-cards,
+.Header__menu-links-currencies {
+    flex: 1
+}
+
+.Header__menu-links-settings {
+    flex: 1;
+}
