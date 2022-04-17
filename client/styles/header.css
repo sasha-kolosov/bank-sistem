@@ -2,6 +2,7 @@
 
 .Header {
     height: 10vh;
+    user-select: none;
 }
 
 .Header__line {
@@ -19,19 +20,33 @@
 }
 
 .Header__menu-links {
-    flex: 2;
+    flex: 9;
+}
+
+.Header__menu-links-block {
+    width: 50vw;
     display: flex;
+    margin: auto;
 }
 
-.Header__menu-links-home {
-    flex: 1;
-}
-
+.Header__menu-links-home,
 .Header__menu-links-cards,
-.Header__menu-links-currencies {
-    flex: 1
-}
-
+.Header__menu-links-currencies,
 .Header__menu-links-settings {
     flex: 1;
+}
+
+.Header__menu-logo-text {
+    padding-left: 4vw;
+    font-size: var(--logo-size);
+    font-family: 'Square Peg', cursive;
+}
+
+.Header__menu-links-home-text,
+.Header__menu-links-cards-text,
+.Header__menu-links-currencies-text,
+.Header__menu-links-settings-text {
+    font-size: var(--menu-size);
+    padding-top: 0.8vh;
+    cursor: pointer;
 }
