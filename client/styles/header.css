@@ -11,8 +11,9 @@
 }
 
 .Header__menu {
-    height: 8vh;
+    height: 5.4vh;
     display: flex; 
+    border-bottom: 1px solid #eee;
 }
 
 .Header__menu-logo {

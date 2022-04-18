@@ -1,0 +1,41 @@
+@import url('./root.css');
+
+.Cards__nocard {
+    height: 90vh;
+}
+
+.Cards__nocard-title {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 2vh;
+    height: 12vh;
+}
+
+.Cards__nocard-offers {
+    height: 76vh;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+}
+
+.Cards__nocard-offers-left-block,
+.Cards__nocard-offers-right-block {
+    flex: 1;
+}
+
+.Cards__nocard-offers-left-block {
+    padding-left: 9vw;
+}
+
+.Cards__nocard-offers-right-block {
+    padding-left: 1vw;
+}
+
+.Cards__nocard-offers-left,
+.Cards__nocard-offers-right {
+    width: 28vw;
+    height: 64vh;
+    border-radius: 16px;
+    background-color: rgb(237, 241, 245);
+    transition: all 0.4s ease-in;
+}
