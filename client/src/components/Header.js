@@ -9,16 +9,24 @@ class Header extends Components {
                 <div class="Header__menu-links">
                     <div class="Header__menu-links-block">
                         <div class="Header__menu-links-home">
-                            <div class="Header__menu-links-home-text">Home</div>
+                            <div class="Header__menu-links-home-text">
+                                <span id="ln-header-home">Home</span>
+                            </div>
                         </div>
                         <div class="Header__menu-links-cards">
-                            <div class="Header__menu-links-cards-text">Cards</div>
+                            <div class="Header__menu-links-cards-text">
+                                <span id="ln-header-cards">Cards</span>
+                            </div>
                         </div>
                         <div class="Header__menu-links-currencies">
-                            <div class="Header__menu-links-currencies-text">Currencies</div>
+                            <div class="Header__menu-links-currencies-text">
+                                <span id="ln-header-currencies">Currencies</span>
+                            </div>
                         </div>
                         <div class="Header__menu-links-settings">
-                            <div class="Header__menu-links-settings-text">Settings</div>
+                            <div class="Header__menu-links-settings-text">
+                                <span id="ln-header-settings">Settings</span>
+                            </div>
                         </div>
                     </div>
                 </div>
