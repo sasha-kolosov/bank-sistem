@@ -1,6 +1,6 @@
 class Currencies extends Components {
     code() {
-        return (`<div class="Currencies" id="currencies" page="${this.id}">
+        return (`<div class="Currencies" id="currencies" component="${this.id}">
             <h1>Currencies</h1>
         </div>`)
     }

@@ -8,3 +8,17 @@
     outline: none;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+.Home,
+.Cards,
+.Currencies,
+.Settings {
+    height: 90vh;
+    user-select: none;
+}
+
+.Cards,
+.Currencies,
+.Settings {
+    display: none;
+}

@@ -1,6 +1,6 @@
 class Header extends Components {
     code() {
-        return (`<div class="Header" id="header" page="${this.id}">
+        return (`<div class="Header" id="header" component="${this.id}">
             <div class="Header__line"></div>
             <div class="Header__menu">
                 <div class="Header__menu-logo">
@@ -10,22 +10,22 @@ class Header extends Components {
                     <div class="Header__menu-links-block">
                         <div class="Header__menu-links-home">
                             <div class="Header__menu-links-home-text">
-                                <span id="ln-header-home">Home</span>
+                                <span class="router" id="ln-header-home">Home</span>
                             </div>
                         </div>
                         <div class="Header__menu-links-cards">
                             <div class="Header__menu-links-cards-text">
-                                <span id="ln-header-cards">Cards</span>
+                                <span class="router" id="ln-header-cards">Cards</span>
                             </div>
                         </div>
                         <div class="Header__menu-links-currencies">
                             <div class="Header__menu-links-currencies-text">
-                                <span id="ln-header-currencies">Currencies</span>
+                                <span class="router" id="ln-header-currencies">Currencies</span>
                             </div>
                         </div>
                         <div class="Header__menu-links-settings">
                             <div class="Header__menu-links-settings-text">
-                                <span id="ln-header-settings">Settings</span>
+                                <span class="router" id="ln-header-settings">Settings</span>
                             </div>
                         </div>
                     </div>
