@@ -36,6 +36,71 @@
     width: 28vw;
     height: 64vh;
     border-radius: 16px;
-    background-color: rgb(237, 241, 245);
-    transition: all 0.4s ease-in;
+    background-color: var(--card-nocard-background);
+}
+
+.Cards__nocard-offers-left-title,
+.Cards__nocard-offers-right-title {
+    height: 4vh;
+    padding-top: 4vh;
+    text-align: center;
+    font-size: var(--card-nocard-title-size);
+}
+
+.Cards__nocard-offers-left-text,
+.Cards__nocard-offers-right-text {
+    height: 38vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: center;
+    padding-top: 4.6vh;
+    font-size: var(--card-nocard-text-size);
+    color: rgb(77, 73, 73);
+    line-height: 4vh;
+}
+.Cards__nocard-offers-left-button,
+.Cards__nocard-offers-right-button {
+    width: 12vw;
+    height: 5.2vh;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 0 5px var(--background);
+    border-radius: 7.5px;
+    text-align: center;
+    color: white;
+    background-color: var(--background);
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+}
+
+.Cards__nocard-offers-left-button-text,
+.Cards__nocard-offers-right-button-text {
+    padding-top: 1.1vh;
+    flex: 2;
+    text-align: right;
+}
+
+.Cards__nocard-offers-left-button-svg,
+.Cards__nocard-offers-right-button-svg {
+    padding-top: 0.5vh;
+    font-size: 28px;
+    padding-left: 0.4vw;
+    flex: 1;
+    text-align: left;
+}
+
+.Cards__Register {
+    height: 82vh;
+    padding-top: 8vh;
+}
+
+.Cards__Register-block {
+    width: 60vw;
+    height: 70vh;
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgb(38 38 38 / 4%), 0 4px 8px rgb(38 38 38 / 16%);
 }
