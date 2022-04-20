@@ -1,8 +1,9 @@
 :root {
-    --background: aquamarine;
-    --card-nocard-background: rgb(237, 241, 245);
+    --background-green: rgb(6, 165, 59);
+    --background-grey: rgb(237, 241, 245);
+    --background-white: #FFFFFF;
     --card-nocard-title-size: 28px;
     --card-nocard-text-size: 22px;
     --logo-size: 28px;
-    --menu-size: 20px;
+    --menu-size: 18px;
 }

@@ -1,0 +1,61 @@
+.Cards__register {
+    height: 82vh;
+    padding-top: 8vh;
+}
+
+.Cards__register-block {
+    width: 60vw;
+    height: 70vh;
+    margin: auto;
+    background-color: var(--background-white);
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgb(38 38 38 / 4%), 0 4px 8px rgb(38 38 38 / 16%);
+    display: flex;
+}
+
+.Cards__register-block-left {
+    flex: 1.5;
+    padding-left: 3vw;
+}
+
+.Cards__register-block-right {
+    flex: 1;
+}
+
+.Cards__register-block-left-title {
+    height: 10vh;
+    padding-top: 4vh;
+    font-size: 26px;
+}
+
+.Cards__register-block-left-menu {
+    height: 6vh;
+}
+
+.Cards__register-block-left-block {
+    width: 20vw;
+    height: 4.6vh;
+    display: flex;
+}
+
+.Cards__register-block-left-menu-left {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(97, 94, 94);
+    transition: all 0.2s ease;
+}
+
+.Cards__register-block-left-menu-right {
+    flex: 1;
+    margin-left: 1vw;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(97, 94, 94);
+    transition: all 0.2s ease;
+}
+
+.Cards__register-block-left-menu-active {
+    border-bottom: 3px solid var(--background-green);
+    color: black;
+}

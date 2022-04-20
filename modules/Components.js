@@ -1,10 +1,10 @@
 class Components {
-    constructor(id) {
-        this.id = id
+    constructor(blocked) {
+        this.blocked = blocked
     }
 
     code() {
-        return `Page ${this.id}`
+        return `<h1>New page</h1>`
     }
 
     render() {

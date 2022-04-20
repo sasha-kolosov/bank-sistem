@@ -1,6 +1,6 @@
 const root = document.getElementById('root')
 
-root.innerHTML = (new App(0)).render()
+root.innerHTML = (new App('block')).render()
 
 window.location.hash = '/'
 

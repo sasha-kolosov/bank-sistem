@@ -1,5 +1,3 @@
-@import url('./root.css');
-
 .Cards__nocard {
     height: 90vh;
 }
@@ -36,7 +34,8 @@
     width: 28vw;
     height: 64vh;
     border-radius: 16px;
-    background-color: var(--card-nocard-background);
+    background-color: var(--background-white);
+    box-shadow: 0 1px 2px rgb(38 38 38 / 4%), 0 4px 8px rgb(38 38 38 / 16%);
 }
 
 .Cards__nocard-offers-left-title,
@@ -58,6 +57,7 @@
     color: rgb(77, 73, 73);
     line-height: 4vh;
 }
+
 .Cards__nocard-offers-left-button,
 .Cards__nocard-offers-right-button {
     width: 12vw;
@@ -65,11 +65,11 @@
     padding: 5px;
     font-size: 18px;
     font-weight: 500;
-    box-shadow: 0 0 5px var(--background);
+    box-shadow: 0 0 5px var(--background-green);
     border-radius: 7.5px;
     text-align: center;
     color: white;
-    background-color: var(--background);
+    background-color: var(--background-green);
     margin: auto;
     display: flex;
     cursor: pointer;
@@ -89,18 +89,4 @@
     padding-left: 0.4vw;
     flex: 1;
     text-align: left;
-}
-
-.Cards__Register {
-    height: 82vh;
-    padding-top: 8vh;
-}
-
-.Cards__Register-block {
-    width: 60vw;
-    height: 70vh;
-    margin: auto;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    box-shadow: 0 1px 2px rgb(38 38 38 / 4%), 0 4px 8px rgb(38 38 38 / 16%);
 }

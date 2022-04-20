@@ -1,6 +1,6 @@
 class Header extends Components {
     code() {
-        return (`<div class="Header" id="header" component="${this.id}">
+        return (`<div class="Header" id="header" style="display: ${this.blocked}">
             <div class="Header__line"></div>
             <div class="Header__menu">
                 <div class="Header__menu-logo">

@@ -1,6 +1,6 @@
 class CardsNocard extends Components {
     code() {
-        return (`<div class="Cards__nocard" component="${this.id}" >
+        return (`<div class="Cards__nocard" style="display: ${this.blocked}" >
             <div class="Cards__nocard-title">
                 <span id="ln-cards-nocard-title">Register now — buy today</span>
             </div>
@@ -9,7 +9,7 @@ class CardsNocard extends Components {
                     <div class="Cards__nocard-offers-left">
                         <div class="Cards__nocard-offers-left-title">
                             <span id="ln-cards-nocard-offers-left-title">
-                                 Credit card
+                                Credit card
                             </span>
                         </div>
                         <div class="Cards__nocard-offers-left-text">
@@ -43,7 +43,7 @@ class CardsNocard extends Components {
                         <div class="Cards__nocard-offers-right-text">
                             <span id="ln-cards-nocard-offers-right-text">
                                 Register a card in 3 minutes.<br> 
-                                A 10-year warranty, a card with the best security system of all cards in Russia.
+                                A 10-year garranty, a card with the best security system of all cards in Russia.
                                 Increased cashback until the end of the year + BankMusic for free.
                                 When registering before the next month, Bank Premium is free for 2 months.
                             </span>
