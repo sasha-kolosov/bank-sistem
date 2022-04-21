@@ -55,7 +55,89 @@
     transition: all 0.2s ease;
 }
 
-.Cards__register-block-left-menu-active {
+.Cards__register-block-left-block .active {
     border-bottom: 3px solid var(--background-green);
     color: black;
+}
+
+.Cards__register-block-left-form {
+    height: 36vh;
+    padding-top: 4vh;
+}
+
+.Cards__register-block-left-form-credit,
+.Cards__register-block-left-form-debit {
+    height: 36vh;
+}
+
+.Cards__register-block-left-form-credit-name,
+.Cards__register-block-left-form-credit-pin {
+    height: 16vh;
+}
+
+.Cards__register-block-left-form-credit-name-placeholder,
+.Cards__register-block-left-form-credit-pin-placeholder {
+    font-size: 13px;
+    height: 3vh;
+}
+
+.Cards__register-block-left-form-credit-name-input,
+.Cards__register-block-left-form-credit-pin-input {
+    height: 6vh;
+    width: 28vw;
+}
+
+.Cards__register-block-left-form-credit-name-input input,
+.Cards__register-block-left-form-credit-pin-input input {
+    height: 4.8vh;
+    padding: 5px;
+    padding-left: 1vw;
+    width: 28vw;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: 18px;
+}
+
+.Cards__register-block-left-form-credit-name-text,
+.Cards__register-block-left-form-credit-pin-text {
+    font-size: 13px;
+    color: #aaa;
+    height: 2vh;
+    padding-top: 1vh;
+}
+
+.Cards__register-block-left-form-debit-name,
+.Cards__register-block-left-form-debit-pin {
+    height: 16vh;
+}
+
+.Cards__register-block-left-form-debit-name-placeholder,
+.Cards__register-block-left-form-debit-pin-placeholder {
+    font-size: 13px;
+    height: 3vh;
+}
+
+.Cards__register-block-left-form-debit-name-input,
+.Cards__register-block-left-form-debit-pin-input {
+    height: 6vh;
+    width: 28vw;
+}
+
+.Cards__register-block-left-form-debit-name-input input,
+.Cards__register-block-left-form-debit-pin-input input {
+    height: 4.8vh;
+    padding: 5px;
+    padding-left: 1vw;
+    width: 28vw;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: 18px;
+}
+
+.Cards__register-block-left-form-debit-name-text,
+.Cards__register-block-left-form-debit-pin-text {
+    font-size: 13px;
+    color: #aaa;
+    height: 2vh;
+    padding-top: 1vh;
 }

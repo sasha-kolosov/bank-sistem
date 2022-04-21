@@ -1,4 +1,12 @@
 class CardsRegister extends Components {
+    constructor(blocked, options) {
+        super(blocked)
+        this.blockedCreditForm = options.blockedCreditForm
+        this.blockedDebitForm = options.blockedDebitForm
+        this.borderCredit = options.borderCredit
+        this.borderDebit = options.borderDebit
+    }
+
     code() {
         return (`<div class="Cards__register" style="display: ${this.blocked}">
             <div class="Cards__register-block">
@@ -10,11 +18,85 @@ class CardsRegister extends Components {
                     </div>
                     <div class="Cards__register-block-left-menu">
                         <div class="Cards__register-block-left-block">
-                            <div class="Cards__register-block-left-menu-left Cards__register-block-left-menu-active">
+                            <div class="Cards__register-block-left-menu-left ${this.borderCredit}">
                                 <span id="ln-cards-regster-block-left-menu-left">Register credit card</span>
                             </div>
-                            <div class="Cards__register-block-left-menu-right">
+                            <div class="Cards__register-block-left-menu-right ${this.borderDebit}">
                                 <span id="ln-cards-regster-block-left-menu-right">Register debit card</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Cards__register-block-left-form">
+                        <div class="Cards__register-block-left-form-credit" style="display: ${this.blockedCreditForm}">
+                            <div class="Cards__register-block-left-form-credit-name">
+                                <div class="Cards__register-block-left-form-credit-name-placeholder">
+                                    <span id="ln-cards-register-block-left-form-credit-name-placeholder">Enter your name</span>
+                                </div>
+                                <div class="Cards__register-block-left-form-credit-name-input">
+                                    <input 
+                                        placeholder="Name / Credit" 
+                                        type="text" 
+                                        name="name" 
+                                        onkeyup="this.value = this.value.replace(/[0-9]\./, '');"
+                                    />
+                                </div>
+                                <div class="Cards__register-block-left-form-credit-name-text">
+                                    <span id="ln-cards-register-block-left-form-credit-name-text">Your real name</span>
+                                </div>
+                            </div> 
+                            <div class="Cards__register-block-left-form-credit-pin">
+                                <div class="Cards__register-block-left-form-credit-pin-placeholder">
+                                    <span id="ln-Cards-register-block-left-form-pin-placeholder">Enter the PIN code</span>
+                                </div>
+                                <div class="Cards__register-block-left-form-credit-pin-input">
+                                    <input 
+                                        placeholder="Pin code" 
+                                        type="text" 
+                                        name="pin" 
+                                        onkeyup="this.value = this.value.replace(/[A-Za-zА-Яа-яЁё]/, '');" 
+                                        pattern="[0-9]\." 
+                                        maxlength="4"
+                                    />
+                                </div>
+                                <div class="Cards__register-block-left-form-credit-pin-text">
+                                    <span id="ln-Cards-register-block-left-form-credit-pin-text">PIN code of 4 digits</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Cards__register-block-left-form-debit"  style="display: ${this.blockedDebitForm}">
+                            <div class="Cards__register-block-left-form-debit-name">
+                                <div class="Cards__register-block-left-form-debit-name-placeholder">
+                                    <span id="ln-cards-register-block-left-form-debit-name-placeholder">Enter your name</span>
+                                </div>
+                                <div class="Cards__register-block-left-form-debit-name-input">
+                                    <input 
+                                        placeholder="Name / Debit" 
+                                        type="text" 
+                                        name="name" 
+                                        onkeyup="this.value = this.value.replace(/[0-9]\./, '');"
+                                    />
+                                </div>
+                                <div class="Cards__register-block-left-form-debit-name-text">
+                                    <span id="ln-cards-register-block-left-form-debit-name-text">Your real name</span>
+                                </div>
+                            </div> 
+                            <div class="Cards__register-block-left-form-pin">
+                                <div class="Cards__register-block-left-form-debit-pin-placeholder">
+                                    <span id="ln-Cards-register-block-left-form-debit-pin-placeholder">Enter the PIN code</span>
+                                </div>
+                                <div class="Cards__register-block-left-form-debit-pin-input">
+                                    <input 
+                                        placeholder="Pin code" 
+                                        type="text" 
+                                        name="pin" 
+                                        onkeyup="this.value = this.value.replace(/[A-Za-zА-Яа-яЁё]/, '');" 
+                                        pattern="[0-9]\." 
+                                        maxlength="4"
+                                    />
+                                </div>
+                                <div class="Cards__register-block-left-form-debit-pin-text">
+                                    <span id="ln-Cards-register-block-left-form-debit-pin-text">PIN code of 4 digits</span>
+                                </div>
                             </div>
                         </div>
                     </div>

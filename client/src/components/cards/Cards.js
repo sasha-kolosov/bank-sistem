@@ -3,7 +3,12 @@ class Cards extends Components {
         return (`<div class="Cards" id="cards" style="display: ${this.blocked}">
             ${(new CardsIscard('none')).render()}
             ${(new CardsNocard('none')).render()}
-            ${(new CardsRegister('block')).render()}
+            ${(new CardsRegister('block', {
+                blockedCreditForm: 'block',
+                blockedDebitForm: 'none',
+                borderCredit: 'active',
+                borderDebit: ''
+            })).render()}
         </div>`)
     }
 }
