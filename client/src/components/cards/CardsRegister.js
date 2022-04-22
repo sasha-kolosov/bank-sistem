@@ -5,6 +5,8 @@ class CardsRegister extends Components {
         this.blockedDebitForm = options.blockedDebitForm
         this.borderCredit = options.borderCredit
         this.borderDebit = options.borderDebit
+        this.blockedCreditFinal = options.blockedCreditFinal
+        this.blockedDebitFinal = options.blockedDebitFinal
     }
 
     code() {
@@ -102,10 +104,20 @@ class CardsRegister extends Components {
                     </div>
                 </div>
                 <div class="Cards__register-block-right">
-                    |<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>
-                    |<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>
-                    |<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>    
-                    |<br>|<br>|<br>  
+                    <div class="Cards__register-block-right-credit" style="display: ${this.blockedCreditFinal}">
+                        <div class="Cards__register-block-right-credit-block">
+                            <div class="Cards__register-block-right-credit-block-title">
+                                <span id="ln-cards-register-block-right-credit-block-title">Your credit card</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Cards__register-block-right-debit" style="display: ${this.blockedDebitFinal}">
+                        <div class="Cards__register-block-right-debit-block">
+                            <div class="Cards__register-block-right-debit-block-title">
+                                <span id="ln-cards-register-block-right-debit-block-title">Your debit card</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>`)

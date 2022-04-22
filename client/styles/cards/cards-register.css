@@ -4,7 +4,7 @@
 }
 
 .Cards__register-block {
-    width: 60vw;
+    width: 70vw;
     height: 70vh;
     margin: auto;
     background-color: var(--background-white);
@@ -19,7 +19,7 @@
 }
 
 .Cards__register-block-right {
-    flex: 1;
+    flex: 1.2;
 }
 
 .Cards__register-block-left-title {
@@ -140,4 +140,27 @@
     color: #aaa;
     height: 2vh;
     padding-top: 1vh;
+}
+
+.Cards__register-block-right-credit,
+.Cards__register-block-right-debit {
+    padding-top: 7vh;
+}
+
+.Cards__register-block-right-credit-block,
+.Cards__register-block-right-debit-block {
+    border-radius: 65px 65px 65px 0;
+    background-color: var(--background-grey);
+    width: 24vw;
+    height: 56vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.Cards__register-block-right-credit-block-title,
+.Cards__register-block-right-debit-block-title {
+    height: 3vh;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 7vh;
 }

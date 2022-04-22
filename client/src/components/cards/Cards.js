@@ -7,7 +7,9 @@ class Cards extends Components {
                 blockedCreditForm: 'block',
                 blockedDebitForm: 'none',
                 borderCredit: 'active',
-                borderDebit: ''
+                borderDebit: '',
+                blockedCreditFinal: 'block',
+                blockedDebitFinal: 'none'
             })).render()}
         </div>`)
     }
