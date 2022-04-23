@@ -153,8 +153,8 @@
     background-color: var(--background-grey);
     width: 24vw;
     height: 56vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .Cards__register-block-right-credit-block-title,
@@ -163,4 +163,82 @@
     text-align: center;
     font-size: 20px;
     padding-top: 7vh;
+}
+
+.Cards__register-block-right-credit-block-name,
+.Cards__register-block-right-debit-block-name {
+    height: 12vh;
+    padding-top: 2vh;
+    border-bottom: 1px solid #ccc;
+    font-size: 34px;
+    text-align: center;
+}
+
+.Cards__register-block-right-debit-block-info,
+.Cards__register-block-right-credit-block-info {
+    height: 16vh;
+    width: 18vw;
+    padding-left: 3vw;
+    padding-top: 2vh;
+    font-size: 18px;
+}
+
+.Cards__register-block-right-debit-block-info-card,
+.Cards__register-block-right-credit-block-info-card {
+    height: 3.2vh;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgb(38 38 38 / 4%), 0 4px 8px rgb(38 38 38 / 16%);
+    padding: 10px;
+    padding-top: 14px;
+}
+
+.Cards__register-block-right-debit-block-info-secret,
+.Cards__register-block-right-credit-block-info-secret {
+    height: 8vh;
+    padding-top: 2vh;
+    display: flex;
+}
+
+.Cards__register-block-right-debit-block-info-cvc,
+.Cards__register-block-right-debit-block-info-date,
+.Cards__register-block-right-credit-block-info-cvc,
+.Cards__register-block-right-credit-block-info-date {
+    height: 3.2vh;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgb(38 38 38 / 4%), 0 4px 8px rgb(38 38 38 / 16%);
+    padding: 10px;
+    padding-top: 14px;
+    flex: 1;
+}
+
+.Cards__register-block-right-debit-block-info-cvc,
+.Cards__register-block-right-credit-block-info-cvc {
+    margin-right: 0.4vw;
+}
+
+.Cards__register-block-right-debit-block-info-date,
+.Cards__register-block-right-credit-block-info-date {
+    margin-left: 0.4vw;
+}
+
+.Cards__register-block-right-debit-block-button,
+.Cards__register-block-right-credit-block-button {
+    height: 7vh;
+    padding-top: 3vh;
+    padding-left: 7vw;
+}
+
+.Cards__register-block-right-debit-block-button-block,
+.Cards__register-block-right-credit-block-button-block {
+    width: 10vw;
+    height: 4.4vh;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 7.5px;
+    text-align: center;
+    color: white;
+    background-color: var(--background-green);
+    cursor: pointer;
+    text-align: center;
+    padding-top: 1.4vh;
 }

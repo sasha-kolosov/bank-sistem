@@ -109,12 +109,54 @@ class CardsRegister extends Components {
                             <div class="Cards__register-block-right-credit-block-title">
                                 <span id="ln-cards-register-block-right-credit-block-title">Your credit card</span>
                             </div>
+                            <div  class="Cards__register-block-right-credit-block-name">
+                                <span>Sasha Kolosov</span>
+                            </div>
+                            <div class="Cards__register-block-right-credit-block-info">
+                                <div class="Cards__register-block-right-credit-block-info-card">
+                                    <span>xxxx xxxx xxxx xxxx</span>
+                                </div>
+                                <div class="Cards__register-block-right-credit-block-info-secret">
+                                    <div class="Cards__register-block-right-credit-block-info-cvc">
+                                        <span>xxx</span>
+                                    </div>
+                                    <div class="Cards__register-block-right-credit-block-info-date">
+                                        <span>xx/xx</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Cards__register-block-right-credit-block-button">
+                                <div class="Cards__register-block-right-credit-block-button-block">
+                                    <span id="ln-cards-register-block-right-credit-block-button-block">Register</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="Cards__register-block-right-debit" style="display: ${this.blockedDebitFinal}">
                         <div class="Cards__register-block-right-debit-block">
                             <div class="Cards__register-block-right-debit-block-title">
                                 <span id="ln-cards-register-block-right-debit-block-title">Your debit card</span>
+                            </div>
+                            <div  class="Cards__register-block-right-debit-block-name">
+                                <span>Sasha Kolosov</span>
+                            </div>
+                            <div class="Cards__register-block-right-debit-block-info">
+                                <div class="Cards__register-block-right-debit-block-info-card">
+                                    <span>xxxx xxxx xxxx xxxx</span>
+                                </div>
+                                <div class="Cards__register-block-right-debit-block-info-secret">
+                                    <div class="Cards__register-block-right-debit-block-info-cvc">
+                                        <span>xxx</span>
+                                    </div>
+                                    <div class="Cards__register-block-right-debit-block-info-date">
+                                        <span>xx/xx</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Cards__register-block-right-debit-block-button">
+                                <div class="Cards__register-block-right-debit-block-button-block">
+                                    <span id="ln-cards-register-block-right-debit-block-button-block">Register</span>
+                                </div>
                             </div>
                         </div>
                     </div>
