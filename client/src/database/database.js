@@ -15,7 +15,7 @@ const DB = {
             type: 'credit', 
             number: '3465901423905478', 
             name: 'Anton Demin', 
-            money: '150000', 
+            money: '100000', 
             pin: '8439', 
             cvc: '436', 
             date: '02/32' 
@@ -35,7 +35,7 @@ const DB = {
             type: 'credit', 
             number: '3927951085396598', 
             name: 'Dima Medvedev', 
-            money: '300000', 
+            money: '100000', 
             pin: '2954', 
             cvc: '856', 
             date: '09/32' 

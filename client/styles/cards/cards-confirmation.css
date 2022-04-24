@@ -1,0 +1,87 @@
+.Cards__confirmation {
+    height: 82vh;
+    padding-top: 8vh;
+}
+
+.Cards__confirmation-debit-block {
+    width: 46vw;
+    height: 70vh;
+    margin: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: var(--background-white);
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgb(38 38 38 / 4%), 0 4px 8px rgb(38 38 38 / 16%);
+}
+
+.Cards__confirmation-debit-block-title {
+    height: 4vh;
+    padding-top: 4vh;
+    font-size: 26px;
+}
+
+.Cards__confirmation-debit-block-info {
+    height: 46vh;
+    padding-top: 3vh; 
+}
+
+.Cards__confirmation-debit-block-info-card,
+.Cards__confirmation-debit-block-info-name,
+.Cards__confirmation-debit-block-info-number,
+.Cards__confirmation-debit-block-info-cvc,
+.Cards__confirmation-debit-block-info-date {
+    height: 4vh;
+    font-size: 18px;
+}
+
+.Cards__confirmation-debit-block-info-options {
+    height: 26vh;
+    padding-top: 1vh;
+    padding-left: 1.4vw;
+    font-size: 16px;
+    color: rgb(103, 101, 101);
+}
+
+.Cards__confirmation-debit-block-info-options li {
+    padding-top: 2vh;
+}
+
+.Cards__confirmation-debit-block-button {
+    height: 10vh;
+    width: 22vw;
+    padding-top: 2vh;
+    display: flex;
+}
+
+.Cards__confirmation-debit-block-button-confirmation {
+    flex: 1;
+    width: 10vw;
+    height: 4.4vh;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 7.5px;
+    text-align: center;
+    color: white;
+    background-color: var(--background-green);
+    box-shadow: 0 0 5px var(--background-green);
+    cursor: pointer;
+    text-align: center;
+    padding-top: 1.4vh;
+}
+
+.Cards__confirmation-debit-block-button-back {
+    flex: 1;
+    width: 10vw;
+    height: 4.4vh;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 7.5px;
+    text-align: center;
+    color: white;
+    background-color: rgb(103, 101, 101);
+    box-shadow: 0 0 5px rgb(103, 101, 101);
+    cursor: pointer;
+    text-align: center;
+    padding-top: 1.4vh;
+    margin-left: 2vw;
+}
