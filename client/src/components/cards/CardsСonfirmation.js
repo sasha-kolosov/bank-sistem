@@ -15,7 +15,61 @@ class CardsConfirmation extends Components {
 
     code() {
         return (`<div class="Cards__confirmation" style="display: ${this.blocked}">
-            <div class="Cards__confirmation-credit" style="display: ${this.blockedCredit}"></div>
+            <div class="Cards__confirmation-credit" style="display: ${this.blockedCredit}">
+                <div class="Cards__confirmation-credit-block">
+                    <div class="Cards__confirmation-credit-block-title">
+                        <span id="ln-cards-confirmation-credit-block-title">Confirmation of registration</span>
+                    </div>
+                    <div class="Cards__confirmation-credit-block-info">
+                        <div class="Cards__confirmation-credit-block-info-card">
+                            <span id="ln-cards__confirmation-credit-block-info-card">Card: Cebit</span>
+                        </div>
+                        <div class="Cards__confirmation-credit-block-info-name">
+                            <span id="ln-cards__confirmation-credit-block-info-name">Name: </span>
+                            ${this.creditName}
+                        </div>
+                        <div class="Cards__confirmation-credit-block-info-number">
+                            <span id="ln-cards__confirmation-credit-block-info-number">Number: </span>
+                            ${this.creditNumber}
+                        </div>
+                        <div class="Cards__confirmation-credit-block-info-cvc">
+                            <span id="ln-cards__confirmation-credit-block-info-cvc">CVC:</span>
+                            ${this.creditCvc}
+                        </div>
+                        <div class="Cards__confirmation-credit-block-info-date">
+                            <span id="ln-cards__confirmation-credit-block-info-date">Date: </span>
+                            ${this.creditDate}
+                        </div>
+                        <div class="Cards__confirmation-credit-block-info-money">
+                            <span id="ln-cards__confirmation-credit-block-info-date">Money: 300000₽</span>
+                        </div>
+                        <div class="Cards__confirmation-credit-block-info-options">
+                            <ul>
+                                <li>
+                                    <span id="ln-cards-confirmation-credit-block-info-options-cashback">Increased cashback</span>
+                                </li>
+                                <li>
+                                    <span id="ln-cards-confirmation-credit-block-info-options-operations">Alerts about operations</span>
+                                </li>
+                                <li>
+                                    <span id="ln-cards-confirmation-credit-block-info-options-support">Card support 24/7</span>
+                                </li>
+                                <li>
+                                    <span id="ln-cards-confirmation-credit-block-info-options-transfers">Free transfers to partner bank cards</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Cards__confirmation-credit-block-button">
+                        <div class="Cards__confirmation-credit-block-button-confirmation">
+                            <span id="ln-cards-confirmation-credit-block-button-confirmation">Register</span>
+                        </div>
+                        <div class="Cards__confirmation-credit-block-button-back">
+                            <span id="ln-cards-confirmation-credit-block-button-back">Back</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="Cards__confirmation-debit" style="display: ${this.blockedDebit}">
                 <div class="Cards__confirmation-debit-block">
                     <div class="Cards__confirmation-debit-block-title">
