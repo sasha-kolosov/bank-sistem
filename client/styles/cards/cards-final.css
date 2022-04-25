@@ -1,0 +1,81 @@
+.Cards__final {
+    height: 80vh;
+    padding-top: 10vh;
+}
+
+.Cards__final-credit {
+    width: 26vw;
+    height: 59vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 5vh;
+    margin: auto;
+    background-color: var(--background-white);
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgb(38 38 38 / 4%), 0 4px 8px rgb(38 38 38 / 16%);
+}
+
+.Cards__final-credit-block {
+    width: 22vw;
+    padding-left: 2vw;
+    padding-top: 2vw;
+    height: 30vh;
+}
+
+.Cards__final-credit-block-card {
+    width: 22vw;
+    height: 24vh;
+    background-color: var(--background-grey);
+    border-radius: 10px;
+    /* animation: move 16s infinite linear; */
+    padding: 5px;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+    10% {
+        transform: rotate3d(0, 1, 0, 36deg);
+    }
+    20% {
+        transform: rotate3d(0, 1, 0, 72deg);
+    }
+    25% {
+        transform: rotate3d(0, 1, 0, 90deg);
+        color: var(--background-grey);
+    }
+    30% {
+        transform: rotate3d(0, 1, 0, 108deg);
+        color: var(--background-grey);
+    }
+    40% {
+        transform: rotate3d(0, 1, 0, 144deg);
+        color: var(--background-grey);
+    }
+    50% {
+        transform: rotate3d(0, 1, 0, 180deg);
+        color: var(--background-grey);
+    }
+    60% {
+        transform: rotate3d(0, 1, 0, 216deg);
+        color: var(--background-grey);
+    }
+    70% {
+        transform: rotate3d(0, 1, 0, 252deg);
+        color: var(--background-grey);
+    }
+    75% {
+        transform: rotate3d(0, 1, 0, 270deg);
+        color: var(--background-grey);
+    }
+    80% {
+        transform: rotate3d(0, 1, 0, 288deg);
+    }
+    90% {
+        transform: rotate3d(0, 1, 0, 324deg);
+    }
+    100% {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+  }
