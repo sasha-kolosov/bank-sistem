@@ -2,15 +2,11 @@ class CardsConfirmation extends Components {
     constructor(blocked, options) {
         super(blocked)
         this.blockedCredit = options.blockedCredit
-        this.creditNumber = options.creditNumber
-        this.creditCvc = options.creditCvc
-        this.creditDate = options.creditDate
-        this.creditName = options.creditName
         this.blockedDebit = options.blockedDebit
-        this.debitNumber = options.debitNumber
-        this.debitCvc = options.debitCvc
-        this.debitDate = options.debitDate
-        this.debitName = options.debitName
+        this.number = options.number
+        this.cvc = options.cvc
+        this.date = options.date
+        this.name = options.name
     }
 
     code() {
@@ -26,19 +22,19 @@ class CardsConfirmation extends Components {
                         </div>
                         <div class="Cards__confirmation-credit-block-info-name">
                             <span id="ln-cards__confirmation-credit-block-info-name">Name: </span>
-                            ${this.creditName}
+                            ${this.name}
                         </div>
                         <div class="Cards__confirmation-credit-block-info-number">
                             <span id="ln-cards__confirmation-credit-block-info-number">Number: </span>
-                            ${this.creditNumber}
+                            ${this.number}
                         </div>
                         <div class="Cards__confirmation-credit-block-info-cvc">
                             <span id="ln-cards__confirmation-credit-block-info-cvc">CVC:</span>
-                            ${this.creditCvc}
+                            ${this.cvc}
                         </div>
                         <div class="Cards__confirmation-credit-block-info-date">
                             <span id="ln-cards__confirmation-credit-block-info-date">Date: </span>
-                            ${this.creditDate}
+                            ${this.date}
                         </div>
                         <div class="Cards__confirmation-credit-block-info-money">
                             <span id="ln-cards__confirmation-credit-block-info-date">Money: 300000₽</span>
@@ -81,19 +77,19 @@ class CardsConfirmation extends Components {
                         </div>
                         <div class="Cards__confirmation-debit-block-info-name">
                             <span id="ln-cards__confirmation-debit-block-info-name">Name: </span>
-                            ${this.debitName}
+                            ${this.name}
                         </div>
                         <div class="Cards__confirmation-debit-block-info-number">
                             <span id="ln-cards__confirmation-debit-block-info-number">Number: </span>
-                            ${this.debitNumber}
+                            ${this.number}
                         </div>
                         <div class="Cards__confirmation-debit-block-info-cvc">
                             <span id="ln-cards__confirmation-debit-block-info-cvc">CVC:</span>
-                            ${this.debitCvc}
+                            ${this.cvc}
                         </div>
                         <div class="Cards__confirmation-debit-block-info-date">
                             <span id="ln-cards__confirmation-debit-block-info-date">Date: </span>
-                            ${this.debitDate}
+                            ${this.date}
                         </div>
                         <div class="Cards__confirmation-debit-block-info-options">
                             <ul>

@@ -3,63 +3,24 @@ const DB = {
         { 
             id: 1, 
             type: 'debit', 
-            number: '5478894348390011', 
+            number: 'xxxxxxxxxxxxxxxx', 
             name: 'Sasha Kolosov', 
-            money: '18070', 
-            pin: '3567', 
-            cvc: '342', 
-            date: '10/32' 
-        },
-        { 
-            id: 2, 
-            type: 'credit', 
-            number: '3465901423905478', 
-            name: 'Anton Demin', 
-            money: '100000', 
-            pin: '8439', 
-            cvc: '436', 
-            date: '02/32' 
-        },
-        { 
-            id: 3, 
-            type: 'debit', 
-            number: '9154025869278439', 
-            name: 'Vika Lagutina', 
-            money: '12500', 
-            pin: '9178', 
-            cvc: '235', 
-            date: '06/32' 
-        },
-        { 
-            id: 4, 
-            type: 'credit', 
-            number: '3927951085396598', 
-            name: 'Dima Medvedev', 
-            money: '100000', 
-            pin: '2954', 
-            cvc: '856', 
-            date: '09/32' 
+            money: '0', 
+            pin: 'xxxx', 
+            cvc: 'xxx', 
+            date: 'xx/xx',
+            info: {
+                timeOfRegister: 'MM:HH DD:MM:YY',
+                protocol: 'debit-ease'
+            }
         }
     ],
 
     cards: [
         { 
             id: 1, 
-            number: '5478894348390011', 
-            name: 'Sasha Kolosov' },
-        { 
-            id: 2, 
-            number: '3465901423905478', 
-            name: 'Anton Demin' 
-        },
-        { 
-            id: 3, 
-            number: '9154025869278439', 
-            name: 'Vika Lagutina' },
-        { 
-            id: 4, 
-            number: '3927951085396598', 
-            name: 'Dima Medvedev' 
+            number: 'xxxxxxxxxxxxxxxx', 
+            name: 'Sasha Kolosov' 
         }
     ],
 

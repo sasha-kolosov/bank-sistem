@@ -13,27 +13,20 @@ class Cards extends Components {
             })).render()}
             ${(new CardsConfirmation('none', {
                 blockedCredit: 'block',
-                creditNumber: 'xxxx xxxx xxxx xxxx',
-                creditCvc: 'xx',
-                creditDate: 'xx/xx',
-                creditName: 'Sasha Kolosov',
                 blockedDebit: 'none',
-                debitNumber: 'xxxx xxxx xxxx xxxx',
-                debitCvc: 'xxx',
-                debitDate: 'xx/xx',
-                debitName: 'Sasha Kolosov'
+                number: 'xxxx xxxx xxxx xxxx',
+                cvc: 'xx',
+                date: 'xx/xx',
+                name: 'Sasha Kolosov'
             })).render()}
             ${(new CardsFinal('block', {
                 blockedCredit: 'block',
-                creditNumber: 'xxxx xxxx xxxx xxxx',
-                creditCvc: 'xx',
-                creditDate: 'xx/xx',
-                creditName: 'Sasha Kolosov',
                 blockedDebit: 'none',
-                debitNumber: 'xxxx xxxx xxxx xxxx',
-                debitCvc: 'xxx',
-                debitDate: 'xx/xx',
-                debitName: 'Sasha Kolosov'
+                id: 'id',
+                number: 'xxxx xxxx xxxx xxxx',
+                cvc: 'xx',
+                date: 'xx/xx',
+                name: 'Sasha Kolosov'
             })).render()}
             ${(new CardsOptions('none')).render()}
         </div>`)

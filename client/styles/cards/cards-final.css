@@ -25,7 +25,61 @@
 .Cards__final-credit-block-card {
     width: 22vw;
     height: 24vh;
-    background-color: var(--background-grey);
     border-radius: 10px;
     padding: 5px;
+    cursor: pointer;
+    background-image: url('../../assets/credit-background.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.Cards__final-credit-block-card-title {
+    height: 3vh;
+    padding-top: 1vh;
+    padding-left: 1vw;
+    font-size: 28px;
+}
+
+.Cards__final-credit-button {
+    height: 16vh;
+    padding-top: 14vh;
+}
+
+.Cards__final-credit-button-block {
+    height: 10vh;
+    display: flex;
+}
+
+.Cards__final-credit-button-block-finish {
+    flex: 1;
+    width: 10vw;
+    height: 4.4vh;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 7.5px;
+    text-align: center;
+    color: white;
+    background-color: var(--background-green);
+    box-shadow: 0 0 5px var(--background-green);
+    cursor: pointer;
+    text-align: center;
+    padding-top: 1.4vh;
+}
+
+.Cards__final-credit-button-block-options {
+    flex: 1;
+    width: 10vw;
+    height: 4.4vh;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 7.5px;
+    text-align: center;
+    color: white;
+    background-color: rgb(103, 101, 101);
+    box-shadow: 0 0 5px rgb(103, 101, 101);
+    cursor: pointer;
+    text-align: center;
+    padding-top: 1.4vh;
+    margin-left: 2vw;
+}
+
