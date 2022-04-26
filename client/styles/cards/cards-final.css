@@ -3,7 +3,8 @@
     padding-top: 10vh;
 }
 
-.Cards__final-credit {
+.Cards__final-credit,
+.Cards__final-debit {
     width: 26vw;
     height: 59vh;
     padding-left: 2vw;
@@ -15,14 +16,16 @@
     box-shadow: 0 1px 2px rgb(38 38 38 / 4%), 0 4px 8px rgb(38 38 38 / 16%);
 }
 
-.Cards__final-credit-block {
+.Cards__final-credit-block,
+.Cards__final-debit-block {
     width: 22vw;
     padding-left: 2vw;
     padding-top: 2vw;
     height: 30vh;
 }
 
-.Cards__final-credit-block-card {
+.Cards__final-credit-block-card,
+.Cards__final-debit-block-card {
     width: 22vw;
     height: 24vh;
     border-radius: 10px;
@@ -33,24 +36,74 @@
     background-repeat: no-repeat;
 }
 
-.Cards__final-credit-block-card-title {
+.Cards__final-debit-block-card {
+    background-image: url('../../assets/debit-background.avif');
+}
+
+.Cards__final-credit-block-card-title,
+.Cards__final-debit-block-card-title {
     height: 3vh;
     padding-top: 1vh;
     padding-left: 1vw;
-    font-size: 28px;
+    padding-right: 1vw;
+    font-size: 24px;
+    text-align: right;
 }
 
-.Cards__final-credit-button {
+.Cards__final-credit-block-card-number,
+.Cards__final-debit-block-card-number {
+    height: 2vh;
+    padding-top: 5vh;
+    font-size: 22px;
+    padding-left: 1.6vw;
+    letter-spacing: 1px;
+}
+
+.Cards__final-credit-block-card-date,
+.Cards__final-debit-block-card-date {
+    padding-top: 2vh;
+    height: 2vh;
+    padding-left: 11vw;
+    font-size: 16px;
+}
+
+.Cards__final-credit-block-card-info,
+.Cards__final-debit-block-card-info {
+    height: 5vh;
+    padding-top: 3vh;
+    padding-left: 1.6vw;
+    display: flex;
+}
+
+.Cards__final-credit-block-card-info-name,
+.Cards__final-debit-block-card-info-name {
+    flex: 3;
+    font-size: 26px;
+}
+
+.Cards__final-credit-block-card-info-protocol,
+.Cards__final-debit-block-card-info-protocol {
+    flex: 1;
+    padding-right: 1vw;
+    padding-top: 0.2vh;
+    text-align: right;
+    font-size: 30px;
+}
+
+.Cards__final-credit-button,
+.Cards__final-debit-button {
     height: 16vh;
     padding-top: 14vh;
 }
 
-.Cards__final-credit-button-block {
+.Cards__final-credit-button-block,
+.Cards__final-debit-button-block {
     height: 10vh;
     display: flex;
 }
 
-.Cards__final-credit-button-block-finish {
+.Cards__final-credit-button-block-finish,
+.Cards__final-debit-button-block-finish {
     flex: 1;
     width: 10vw;
     height: 4.4vh;
@@ -66,7 +119,8 @@
     padding-top: 1.4vh;
 }
 
-.Cards__final-credit-button-block-options {
+.Cards__final-credit-button-block-options,
+.Cards__final-debit-button-block-options {
     flex: 1;
     width: 10vw;
     height: 4.4vh;

@@ -18,5 +18,15 @@ const cards = {
         elements : {},
         state : {},
         methods : {}
+    },
+    cardsFinal : {
+        elements : {},
+        state : {},
+        methods : {}
+    },
+    CardsOptions : {
+        elements : {},
+        state : {},
+        methods : {}
     }
 }

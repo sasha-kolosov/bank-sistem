@@ -1,7 +1,7 @@
 class Cards extends Components {
     code() {
         return (`<div class="Cards" id="cards" style="display: ${this.blocked}">
-            ${(new CardsIscard('none')).render()}
+            ${(new CardsIscard('block')).render()}
             ${(new CardsNocard('none')).render()}
             ${(new CardsRegister('none', {
                 blockedCreditForm: 'block',
@@ -14,18 +14,18 @@ class Cards extends Components {
             ${(new CardsConfirmation('none', {
                 blockedCredit: 'block',
                 blockedDebit: 'none',
-                number: 'xxxx xxxx xxxx xxxx',
-                cvc: 'xx',
-                date: 'xx/xx',
+                number: '0000 0000 0000 0000',
+                cvc: '000',
+                date: '00/00',
                 name: 'Sasha Kolosov'
             })).render()}
-            ${(new CardsFinal('block', {
-                blockedCredit: 'block',
-                blockedDebit: 'none',
+            ${(new CardsFinal('none', {
+                blockedCredit: 'none',
+                blockedDebit: 'block',
                 id: 'id',
-                number: 'xxxx xxxx xxxx xxxx',
-                cvc: 'xx',
-                date: 'xx/xx',
+                number: '0000 0000 0000 0000',
+                cvc: '000',
+                date: '00/00',
                 name: 'Sasha Kolosov'
             })).render()}
             ${(new CardsOptions('none')).render()}
