@@ -1,0 +1,76 @@
+.Cards__iscard {
+    height: 86vh;
+    padding-top: 4vh;
+}
+
+.Cards__iscard-block {
+    height: 86vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.Cards__iscard-block-title {
+    height: 4vh;
+    font-size: var(--logo-size);
+}
+
+.Cards__iscard-block-cards {
+    padding-top: 6vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 4vw;
+}
+
+.Cards__iscard-block-cards-card {
+    width: 22vw;
+    height: 24vh;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Cards__iscard-block-cards-card-title {
+    height: 3vh;
+    padding-top: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 24px;
+    text-align: right;
+}
+
+.Cards__iscard-block-cards-card-number {
+    height: 2vh;
+    padding-top: 5vh;
+    font-size: 22px;
+    padding-left: 1.6vw;
+    letter-spacing: 1px;
+}
+
+.Cards__iscard-block-cards-card-date {
+    padding-top: 2vh;
+    height: 2vh;
+    padding-left: 11vw;
+    font-size: 16px;
+}
+
+.Cards__iscard-block-cards-card-info {
+    height: 5vh;
+    padding-top: 3vh;
+    padding-left: 1.6vw;
+    display: flex;
+}
+
+.Cards__iscard-block-cards-card-info-name {
+    flex: 3;
+    font-size: 26px;
+}
+
+.Cards__iscard-block-cards-card-info-protocol {
+    flex: 1;
+    padding-right: 1vw;
+    padding-top: 0.2vh;
+    text-align: right;
+    font-size: 30px;
+}

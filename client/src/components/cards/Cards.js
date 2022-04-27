@@ -20,11 +20,10 @@ class Cards extends Components {
                 name: 'Sasha Kolosov'
             })).render()}
             ${(new CardsFinal('none', {
-                blockedCredit: 'none',
-                blockedDebit: 'block',
+                blockedCredit: 'block',
+                blockedDebit: 'none',
                 id: 'id',
                 number: '0000 0000 0000 0000',
-                cvc: '000',
                 date: '00/00',
                 name: 'Sasha Kolosov'
             })).render()}

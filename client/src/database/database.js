@@ -3,12 +3,12 @@ const DB = {
         { 
             id: 1, 
             type: 'debit', 
-            number: 'xxxxxxxxxxxxxxxx', 
-            name: 'Sasha Kolosov', 
+            number: '0000 0000 0000 0000', 
+            name: 'User name', 
             money: '0', 
-            pin: 'xxxx', 
-            cvc: 'xxx', 
-            date: 'xx/xx',
+            pin: '0000', 
+            cvc: '000', 
+            date: '00/00',
             info: {
                 timeOfRegister: 'MM:HH DD:MM:YY',
                 protocol: 'debit-ease'
@@ -18,9 +18,11 @@ const DB = {
 
     cards: [
         { 
-            id: 1, 
-            number: 'xxxxxxxxxxxxxxxx', 
-            name: 'Sasha Kolosov' 
+            name : 'User name',
+            id : '1',
+            type : 'debit',
+            number : '0000 0000 0000 0000',
+            date : '00/00'
         }
     ],
 
@@ -28,6 +30,8 @@ const DB = {
         for(let i = 0; i < this._cards; i++) {
             if(this._cards[i].id === id) {
                 return this._cards[i]
+            } else {
+                return new Error('Cards with this id is not defined')
             }
         }
     }
