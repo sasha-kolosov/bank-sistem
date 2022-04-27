@@ -1,16 +1,22 @@
 class CardsIscard extends Components {
+    state() {
+        return cardsState.cardsIscard.cards()
+    }
+
     cards() {
-        const cards = cardsState.cardsIscard.cards()
+        const cards = this.state()
 
         let layout = ''
         let img = ''
 
         for(let i = 0; i < cards.length; i++) {
+            
             if(cards[i].type == 'debit') {
                 img = './client/assets/debit-background.avif'
             } else if(cards[i].type == 'credit') {
                 img = './client/assets/credit-background.avif'
             }
+
             layout += (`<div 
                 class="Cards__iscard-block-cards-card"
                 style="background-image: url('${img}')" 
