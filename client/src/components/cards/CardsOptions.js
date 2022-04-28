@@ -1,5 +1,5 @@
 class CardsOptions extends Components {
-    constructor(blocked, options) {
+    constructor(blocked) {
         super(blocked)
     }
 

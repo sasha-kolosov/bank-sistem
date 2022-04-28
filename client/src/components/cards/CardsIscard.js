@@ -42,6 +42,14 @@ class CardsIscard extends Components {
             </div>`)
         }
 
+        if(cards.length < 6) {
+            layout += (`
+                <div class="Cards__iscard-block-cards-new">
+                    <i class="bi bi-plus-lg"></i>
+                </div>
+            `)
+        }
+
         return layout
     }
 

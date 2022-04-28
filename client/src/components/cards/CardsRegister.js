@@ -20,10 +20,10 @@ class CardsRegister extends Components {
                     </div>
                     <div class="Cards__register-block-left-menu">
                         <div class="Cards__register-block-left-block">
-                            <div class="Cards__register-block-left-menu-left ${this.borderCredit}">
+                            <div id="button-1" class="Cards__register-block-left-menu-left ${this.borderCredit}">
                                 <span id="ln-cards-regster-block-left-menu-left">Register credit card</span>
                             </div>
-                            <div class="Cards__register-block-left-menu-right ${this.borderDebit}">
+                            <div id="button-2" class="Cards__register-block-left-menu-right ${this.borderDebit}">
                                 <span id="ln-cards-regster-block-left-menu-right">Register debit card</span>
                             </div>
                         </div>
