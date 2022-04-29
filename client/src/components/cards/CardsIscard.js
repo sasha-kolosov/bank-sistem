@@ -4,22 +4,22 @@ class CardsIscard extends Components {
     }
 
     cards() {
+
         const cards = this.state()
 
-        let layout = ''
-        let img = ''
+        const elements = { layout : '', img : '' }
 
         for(let i = 0; i < cards.length; i++) {
             
             if(cards[i].type == 'debit') {
-                img = './client/assets/debit-background.avif'
+                elements.img = './client/assets/debit-background.avif'
             } else if(cards[i].type == 'credit') {
-                img = './client/assets/credit-background.avif'
+                elements.img = './client/assets/credit-background.avif'
             }
 
-            layout += (`<div 
+            elements.layout += (`<div 
                 class="Cards__iscard-block-cards-card"
-                style="background-image: url('${img}')" 
+                style="background-image: url('${elements.img}')" 
                 card-id="${cards[i].id}"
             >
                 <div class="Cards__iscard-block-cards-card-title">
@@ -43,14 +43,14 @@ class CardsIscard extends Components {
         }
 
         if(cards.length < 6) {
-            layout += (`
+            elements.layout += (`
                 <div class="Cards__iscard-block-cards-new">
                     <i class="bi bi-plus-lg"></i>
                 </div>
             `)
         }
 
-        return layout
+        return elements.layout
     }
 
     code() {

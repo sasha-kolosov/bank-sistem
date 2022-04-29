@@ -27,7 +27,9 @@ class Cards extends Components {
                 date: '00/00',
                 name: 'Sasha Kolosov'
             })).render()}
-            ${(new CardsOptions('none')).render()}
+            ${(new CardsOptions('none', {
+                id: '1'
+            })).render()}
         </div>`)
     }
 }
