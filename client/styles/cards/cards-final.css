@@ -9,7 +9,7 @@
     height: 59vh;
     padding-left: 2vw;
     padding-right: 2vw;
-    padding-top: 5vh;
+    padding-top: 2vh;
     margin: auto;
     background-color: var(--background-white);
     border-radius: 20px;
@@ -20,8 +20,8 @@
 .Cards__final-debit-block {
     width: 22vw;
     padding-left: 2vw;
-    padding-top: 2vw;
-    height: 30vh;
+    padding-top: 6vh;
+    height: 32vh;
 }
 
 .Cards__final-credit-block-card,
@@ -30,7 +30,6 @@
     height: 24vh;
     border-radius: 10px;
     padding: 5px;
-    cursor: pointer;
     background-image: url('../../assets/credit-background.avif');
     background-size: cover;
     background-repeat: no-repeat;
@@ -92,8 +91,8 @@
 
 .Cards__final-credit-button,
 .Cards__final-debit-button {
-    height: 16vh;
-    padding-top: 14vh;
+    height: 6vh;
+    padding-top: 8vh;
 }
 
 .Cards__final-credit-button-block,

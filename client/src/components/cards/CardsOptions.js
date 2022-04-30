@@ -15,33 +15,21 @@ class CardsOptions extends Components {
         }
     }
 
-    img() {
-        let img = ''
-
-        if(this.card().type == 'debit') {
-            img = './client/assets/debit-background.avif'
-        } else if(cards[i].type == 'credit') {
-            img = './client/assets/credit-background.avif'
-        }
-
-        return img
-    }
-
     chart() {
-        const chart = ''
+        const elements = { layout : '', chart : new Chart({ arr: this.card().expenses }).start() }
 
-        return chart 
+        return elements.layout 
     }
 
     code() {
         return (`<div class="Cards__options" style="display: ${this.blocked}">
             <div class="Cards__options-block">
                 <div class="Cards__options-block-title">
-                    <span id="ln-cards-options-block-title">Card</span> #${this.card().id}
+                    <span id="ln-cards-options-block-title">Information about card</span>
                 </div>
                 <div class="Cards__options-block-info">
                     <div class="Cards__options-block-info-left">
-                        <div class="Cards__options-block-info-left-card" style="background-image: url('${this.img()}')"  card-id="${this.card().id}">
+                        <div class="Cards__options-block-info-left-card" style="background-image: url('${this.card().background}')"  card-id="${this.card().id}">
                             <div class="Cards__options-block-info-left-card-title">
                                 Bank
                             </div>
@@ -63,7 +51,6 @@ class CardsOptions extends Components {
                     </div>
                     <div class="Cards__options-block-info-chart">
                         ${this.chart()}
-                        dfsdf
                     </div>
                 </div>
             </div>

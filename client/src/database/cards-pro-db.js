@@ -2,8 +2,9 @@ const cardsProDB = [
     { 
         id: 1, 
         type: 'debit', 
-        number: '0000 0000 0000 0000', 
         name: 'User name', 
+        number: '0000 0000 0000 0000', 
+        background: './client/assets/debit-background.avif',
         money: '0', 
         pin: '0000', 
         cvc: '000', 
@@ -12,21 +13,48 @@ const cardsProDB = [
             timeOfRegister: 'MM:HH DD:MM:YY',
             protocol: 'debit-ease'
         },
-        expenses: {} // Затраты
+        expenses: [
+            {
+                type: 'food',
+                money: 14080
+            },
+            {
+                type: 'sport',
+                money: 7800
+            },
+            {
+                type: 'games',
+                money: 4300
+            }
+        ]
     },
     { 
         id: 2, 
         type: 'credit', 
-        number: '0000 0000 0000 0000', 
         name: 'User name', 
+        number: '0000 0000 0000 0000', 
+        background: './client/assets/credit-background.avif',
         money: '0', 
         pin: '0000', 
         cvc: '000', 
         date: '00/00',
         info: {
             timeOfRegister: 'MM:HH DD:MM:YY',
-            protocol: 'debit-ease'
+            protocol: 'credit-ease'
         },
-        expenses: {} // Затраты 
+        expenses: [
+            {
+                type: 'food',
+                money: 24080
+            },
+            {
+                type: 'games',
+                money: 29000
+            },
+            {
+                type: 'culture',
+                money: 14000
+            }
+        ]
     }
 ]
