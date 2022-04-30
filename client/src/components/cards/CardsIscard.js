@@ -45,7 +45,7 @@ class CardsIscard extends Components {
         return elements.layout
     }
 
-    code() {
+    render() {
         return (`<div class="Cards__iscard" style="display: ${this.blocked}">
             <div class="Cards__iscard-block">
                 <div class="Cards__iscard-block-title">

@@ -10,7 +10,7 @@ class CardsFinal extends Components {
         this.name = options.name
     }
 
-    code() {
+    render() {
         return (`<div class="Cards__final" style="display: ${this.blocked}">
             <div class="Cards__final-credit" style="display: ${this.blockedCredit}">
                 <div class="Cards__final-credit-block">

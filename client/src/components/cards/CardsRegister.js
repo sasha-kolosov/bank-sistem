@@ -9,7 +9,7 @@ class CardsRegister extends Components {
         this.blockedDebitFinal = options.blockedDebitFinal
     }
 
-    code() {
+    render() {
         return (`<div class="Cards__register" style="display: ${this.blocked}">
             <div class="Cards__register-block">
                 <div class="Cards__register-block-left">

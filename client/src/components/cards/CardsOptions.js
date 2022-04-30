@@ -21,7 +21,7 @@ class CardsOptions extends Components {
         return elements.layout 
     }
 
-    code() {
+    render() {
         return (`<div class="Cards__options" style="display: ${this.blocked}">
             <div class="Cards__options-block">
                 <div class="Cards__options-block-title">

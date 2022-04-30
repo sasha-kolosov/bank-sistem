@@ -1,5 +1,5 @@
 class CardsNocard extends Components {
-    code() {
+    render() {
         return (`<div class="Cards__nocard" style="display: ${this.blocked}" >
             <div class="Cards__nocard-title">
                 <span id="ln-cards-nocard-title">Register now — buy today</span>

@@ -1,5 +1,5 @@
 class App extends Components {
-    code() {
+    render() {
         return (`
             ${(new Header('block')).render()}
             ${(new Home('block')).render()}

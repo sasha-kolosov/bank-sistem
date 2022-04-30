@@ -1,5 +1,5 @@
 class Cards extends Components {
-    code() {
+    render() {
         return (`<div class="Cards" id="cards" style="display: ${this.blocked}">
             ${(new CardsIscard('block')).render()}
             ${(new CardsNocard('none')).render()}

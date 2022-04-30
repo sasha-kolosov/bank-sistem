@@ -1,5 +1,5 @@
 class Header extends Components {
-    code() {
+    render() {
         return (`<div class="Header" id="header" style="display: ${this.blocked}">
             <div class="Header__line"></div>
             <div class="Header__menu">
