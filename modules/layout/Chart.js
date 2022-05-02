@@ -8,7 +8,8 @@ class Chart {
         const result = {
             arrMoney: [],
             arrPercent: [],
-            arrName: []
+            arrName: [],
+            arrColor: []
         }
 
         let sum = 0
@@ -23,6 +24,16 @@ class Chart {
 
         for(let i = 0; i < this.arr.length; i++) {
             result.arrPercent.push((result.arrMoney[i] / percent).toFixed(0))
+
+            if(this.arr[i].type == 'food') {
+                result.arrColor.push('#8D230F')
+            } if(this.arr[i].type == 'sport') {
+                result.arrColor.push('#1E434C')
+            } if(this.arr[i].type == 'culture') {
+                result.arrColor.push('#9B4F0F')
+            } if(this.arr[i].type == 'education') {
+                result.arrColor.push('#C99E10')
+            }
         }
 
         return result

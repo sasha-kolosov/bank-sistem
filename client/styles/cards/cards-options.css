@@ -81,9 +81,24 @@
     font-size: 30px;
 }
 
-.Cards__options-block-info-chart {
+.Cards__options-block-info-right {
     flex: 1;
-    padding-left: 8vw;
+    padding-left: 6vw;
     padding-top: 1vh; 
+    padding-right: 6vw;
 }
 
+.Cards__options-block-info-right-block {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.Cards__options-block-info-right-block-chart {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    width: 60px;
+    cursor: pointer;
+}

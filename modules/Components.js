@@ -3,7 +3,7 @@ class Components {
         this.blocked = blocked
     }
 
-    render() {
-        return ``
-    }
+    state() {} // return state 
+
+    render() {} // return layout 
 }

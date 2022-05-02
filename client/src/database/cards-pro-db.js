@@ -16,15 +16,19 @@ const cardsProDB = [
         expenses: [
             {
                 type: 'food',
-                money: 14080
+                money: 10500
             },
             {
                 type: 'sport',
-                money: 7800
+                money: 0
             },
             {
-                type: 'games',
-                money: 4300
+                type: 'education',
+                money: 7300
+            },
+            {
+                type: 'culture',
+                money: 2900
             }
         ]
     },
@@ -48,7 +52,7 @@ const cardsProDB = [
                 money: 24080
             },
             {
-                type: 'games',
+                type: 'education',
                 money: 29000
             },
             {

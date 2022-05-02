@@ -18,6 +18,26 @@ class CardsOptions extends Components {
     chart() {
         const elements = { layout : '', chart : new Chart({ arr: this.card().expenses }).start() }
 
+        let index = 0
+
+        if(Math.max.apply(null, elements.chart.arrPercent) > 59) {
+            index = 2
+        } else if(Math.max.apply(null, elements.chart.arrPercent) < 60 && Math.max.apply(null, elements.chart.arrPercent) > 49) {
+            index = 3
+        } else if(Math.max.apply(null, elements.chart.arrPercent) < 50 && Math.max.apply(null, elements.chart.arrPercent) > 39) {
+            index = 4
+        } else if(Math.max.apply(null, elements.chart.arrPercent) < 40) {
+            index = 5
+        }
+ 
+        for(let i = 0; i < this.card().expenses.length; i++) {
+            elements.layout += (`
+                <div style="height: ${elements.chart.arrPercent[i] * index}px; background-color: ${elements.chart.arrColor[i]}" class="Cards__options-block-info-right-block-chart">
+                    
+                </div>
+            `)
+        }
+
         return elements.layout 
     }
 
@@ -49,8 +69,10 @@ class CardsOptions extends Components {
                             </div>
                         </div>
                     </div>
-                    <div class="Cards__options-block-info-chart">
-                        ${this.chart()}
+                    <div class="Cards__options-block-info-right">
+                        <div class="Cards__options-block-info-right-block">
+                            ${this.chart()}
+                        </div>
                     </div>
                 </div>
             </div>
