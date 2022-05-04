@@ -20,7 +20,7 @@ const cardsProDB = [
             },
             {
                 type: 'sport',
-                money: 0
+                money: 12000
             },
             {
                 type: 'education',
@@ -28,7 +28,7 @@ const cardsProDB = [
             },
             {
                 type: 'culture',
-                money: 2900
+                money: 9000
             }
         ]
     },
@@ -58,6 +58,10 @@ const cardsProDB = [
             {
                 type: 'culture',
                 money: 14000
+            },
+            {
+                type: 'sport',
+                money: 21000
             }
         ]
     }

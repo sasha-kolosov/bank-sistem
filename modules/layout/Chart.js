@@ -1,9 +1,28 @@
 class Chart {
     constructor(options) {
         this.arr = options.arr
+        this.colors = options.colors || undefined
         this.work = false
     }
 
+    color(result) {
+        if(this.colors == undefined) {
+            for(let i = 0; i < this.arr.length; i++) {
+                if(this.arr[i].type == 'food') {
+                    result.push('#8D230F')
+                } if(this.arr[i].type == 'sport') {
+                    result.push('#1E434C')
+                } if(this.arr[i].type == 'culture') {
+                    result.push('#9B4F0F')
+                } if(this.arr[i].type == 'education') {
+                    result.push('#C99E10')
+                }
+            }
+        } else {
+            // For best time
+        }
+    }
+ 
     start() {
         const result = {
             arrMoney: [],
@@ -20,21 +39,21 @@ class Chart {
             sum += this.arr[i].money
         }
 
-        const percent = sum / 100
-
-        for(let i = 0; i < this.arr.length; i++) {
-            result.arrPercent.push((result.arrMoney[i] / percent).toFixed(0))
-
-            if(this.arr[i].type == 'food') {
-                result.arrColor.push('#8D230F')
-            } if(this.arr[i].type == 'sport') {
-                result.arrColor.push('#1E434C')
-            } if(this.arr[i].type == 'culture') {
-                result.arrColor.push('#9B4F0F')
-            } if(this.arr[i].type == 'education') {
-                result.arrColor.push('#C99E10')
+        for(let i = 0; i < result.arrMoney.length; i++) {
+            if(result.arrMoney[i] == 0 || result.arrMoney[i] < 0) {
+                result.arrMoney.splice(i, 1)
             }
         }
+
+        console.log(result)
+
+        const percent = sum / 100
+
+        for(let i = 0; i < result.arrMoney.length; i++) {
+            result.arrPercent.push((result.arrMoney[i] / percent).toFixed(0))
+        }
+
+        this.color(result.arrColor)
 
         return result
     }

@@ -27,7 +27,7 @@ class Cards extends Components {
                 date: '00/00',
                 name: 'Sasha Kolosov'
             })).render()}
-            ${(new CardsOptions('none', {
+            ${(new CardsOptions('block', {
                 id: '1'
             })).render()}
         </div>`)

@@ -32,9 +32,11 @@ class CardsOptions extends Components {
  
         for(let i = 0; i < this.card().expenses.length; i++) {
             elements.layout += (`
-                <div style="height: ${elements.chart.arrPercent[i] * index}px; background-color: ${elements.chart.arrColor[i]}" class="Cards__options-block-info-right-block-chart">
-                    
-                </div>
+                <div 
+                    style="height: ${elements.chart.arrPercent[i] * index}px; 
+                    background-color: ${elements.chart.arrColor[i]}" 
+                    class="Cards__options-block-info-right-block-chart"
+                ></div>
             `)
         }
 
