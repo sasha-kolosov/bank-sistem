@@ -29,7 +29,7 @@ class CardsOptions extends Components {
         } else if(Math.max.apply(null, elements.chart.arrPercent) < 40) {
             index = 5
         }
- 
+    
         for(let i = 0; i < this.card().expenses.length; i++) {
             elements.layout += (`
                 <div 
@@ -74,6 +74,27 @@ class CardsOptions extends Components {
                     <div class="Cards__options-block-info-right">
                         <div class="Cards__options-block-info-right-block">
                             ${this.chart()}
+                        </div>
+                    </div>
+                </div>
+                <div class="Cards__options-block-options">
+                    <div class="Cards__options-block-options-info">
+                        <div class="Cards__options-block-options-info-timeRegister">
+                            <span id="cards-options-block-options-info-timeRegister">Registration: </span>${this.card().info.timeOfRegister}
+                        </div>
+                        <div class="Cards__options-block-options-info-protocol">
+                            <span id="cards-options-block-options-info-protocol">Security protocol: </span>${this.card().info.protocol}
+                        </div>
+                        <div class="Cards__options-block-options-info-money">
+                            <span id="cards-options-block-options-info-money">Now on the card: </span>${this.card().money}₽
+                        </div>
+                        <div class="Cards__options-block-options-info-expenses">
+                            <span id="cards-options-block-options-info-expenses">Your costs: </span>${this.card().expens}₽
+                        </div>
+                    </div>
+                    <div class="Cards__options-block-options-block">
+                        <div class="Cards__options-block-options-button">
+                            <span id="cards-options-block-options-button">Back</span>
                         </div>
                     </div>
                 </div>

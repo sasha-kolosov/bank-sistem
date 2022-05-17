@@ -16,6 +16,8 @@ class Chart {
                     result.push('#9B4F0F')
                 } if(this.arr[i].type == 'education') {
                     result.push('#C99E10')
+                } if(this.arr[i].type == 'bank') {
+                    result.push('#819672')
                 }
             }
         } else {

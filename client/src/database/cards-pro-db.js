@@ -5,7 +5,7 @@ const cardsProDB = [
         name: 'User name', 
         number: '0000 0000 0000 0000', 
         background: './client/assets/debit-background.avif',
-        money: '0', 
+        money: 0, 
         pin: '0000', 
         cvc: '000', 
         date: '00/00',
@@ -29,8 +29,13 @@ const cardsProDB = [
             {
                 type: 'culture',
                 money: 9000
+            },
+            {
+                type: 'bank',
+                money: 3000
             }
-        ]
+        ],
+        expens: 41800
     },
     { 
         id: 2, 
@@ -38,7 +43,7 @@ const cardsProDB = [
         name: 'User name', 
         number: '0000 0000 0000 0000', 
         background: './client/assets/credit-background.avif',
-        money: '0', 
+        money: 0, 
         pin: '0000', 
         cvc: '000', 
         date: '00/00',
@@ -62,7 +67,12 @@ const cardsProDB = [
             {
                 type: 'sport',
                 money: 21000
+            },
+            {
+                type: 'bank',
+                money: 3000
             }
-        ]
+        ],
+        expens: 91080
     }
 ]

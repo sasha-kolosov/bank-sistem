@@ -103,3 +103,44 @@
     width: 60px;
     cursor: pointer;
 }
+
+.Cards__options-block-options {
+    height: 24vh;
+    padding-top: 1vh;
+    display: flex;
+}
+
+.Cards__options-block-options-info {
+    flex: 1.4;
+    padding-left: 4.6vw;
+    font-size: 18px;
+    color: rgb(86, 83, 83);
+}
+
+.Cards__options-block-options-info-timeRegister,
+.Cards__options-block-options-info-protocol,
+.Cards__options-block-options-info-money,
+.Cards__options-block-options-info-expenses {
+    padding-top: 1.6vh;
+}
+
+.Cards__options-block-options-block {
+    flex: 1;
+}
+
+.Cards__options-block-options-button {
+    width: 10vw;
+    height: 4.4vh;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 7.5px;
+    text-align: center;
+    color: white;
+    margin-top: 17vh;
+    margin-left: 7vw;
+    background-color: var(--background-green);
+    box-shadow: 0 0 5px var(--background-green);
+    cursor: pointer;
+    text-align: center;
+    padding-top: 1.4vh;
+}
