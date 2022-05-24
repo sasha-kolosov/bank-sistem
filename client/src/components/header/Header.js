@@ -18,9 +18,14 @@ class Header extends Components {
                                 <span class="router" id="ln-header-cards">Cards</span>
                             </div>
                         </div>
-                        <div class="Header__menu-links-currencies">
-                            <div class="Header__menu-links-currencies-text">
-                                <span class="router" id="ln-header-currencies">Currencies</span>
+                        <div class="Header__menu-links-payments">
+                            <div class="Header__menu-links-payments-text">
+                                <span class="router" id="ln-header-payments">Payments</span>
+                            </div>
+                        </div>
+                        <div class="Header__menu-links-deposits">
+                            <div class="Header__menu-links-deposits-text">
+                                <span class="router" id="ln-header-deposits">Deposits</span>
                             </div>
                         </div>
                         <div class="Header__menu-links-settings">

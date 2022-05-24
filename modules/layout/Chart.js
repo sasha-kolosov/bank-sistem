@@ -47,8 +47,6 @@ class Chart {
             }
         }
 
-        console.log(result)
-
         const percent = sum / 100
 
         for(let i = 0; i < result.arrMoney.length; i++) {

@@ -2,14 +2,16 @@ const config = {
     route: [
         document.getElementById('home'),
         document.getElementById('cards'),
-        document.getElementById('currencies'),
+        document.getElementById('payments'),
+        document.getElementById('deposits'),
         document.getElementById('settings')
     ],
     hash: [
         '/',
         '/cards',
-        'currencies',
-        'settings'
+        '/payments',
+        '/deposits',
+        '/settings',
     ],
     language: {
         elements: [],

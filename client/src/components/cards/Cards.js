@@ -1,7 +1,7 @@
 class Cards extends Components {
     render() {
         return (`<div class="Cards" id="cards" style="display: ${this.blocked}">
-            ${(new CardsIscard('none')).render()}
+            ${(new CardsIscard('block')).render()}
             ${(new CardsNocard('none')).render()}
             ${(new CardsRegister('none', {
                 blockedCreditForm: 'block',
@@ -27,7 +27,7 @@ class Cards extends Components {
                 date: '00/00',
                 name: 'Sasha Kolosov'
             })).render()}
-            ${(new CardsOptions('block', {
+            ${(new CardsOptions('none', {
                 id: '1'
             })).render()}
         </div>`)
