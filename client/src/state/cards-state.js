@@ -1,14 +1,12 @@
 const cardsState = {
     cardsIscard : {
         cards() {
-            const cards = new Connect(cardsDB).get()
-            return cards
+            return new Connect(cardsDB).get()
         }
     },
     cardsOptions : {
         cards() {
-            const cards = new Connect(cardsProDB).get()
-            return cards
+            return new Connect(cardsProDB).get()
         }
     }
 }

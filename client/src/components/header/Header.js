@@ -10,27 +10,37 @@ class Header extends Components {
                     <div class="Header__menu-links-block">
                         <div class="Header__menu-links-home">
                             <div class="Header__menu-links-home-text">
-                                <span class="router" id="ln-header-home">Home</span>
+                                <router>
+                                    <span id="ln-header-home">Home</span>
+                                </router>
                             </div>
                         </div>
                         <div class="Header__menu-links-cards">
                             <div class="Header__menu-links-cards-text">
-                                <span class="router" id="ln-header-cards">Cards</span>
+                                <router>
+                                    <span id="ln-header-cards">Cards</span>
+                                </router>
                             </div>
                         </div>
                         <div class="Header__menu-links-payments">
                             <div class="Header__menu-links-payments-text">
-                                <span class="router" id="ln-header-payments">Payments</span>
+                                <router>
+                                    <span id="ln-header-payments">Payments</span>
+                                </router>
                             </div>
                         </div>
                         <div class="Header__menu-links-deposits">
                             <div class="Header__menu-links-deposits-text">
-                                <span class="router" id="ln-header-deposits">Deposits</span>
+                                <router>
+                                    <span id="ln-header-deposits">Deposits</span>
+                                </router>
                             </div>
                         </div>
                         <div class="Header__menu-links-settings">
                             <div class="Header__menu-links-settings-text">
-                                <span class="router" id="ln-header-settings">Settings</span>
+                                <router>
+                                    <span id="ln-header-settings">Settings</span>
+                                </router>
                             </div>
                         </div>
                     </div>

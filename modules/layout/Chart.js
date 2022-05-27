@@ -7,18 +7,16 @@ class Chart {
 
     color(result) {
         if(this.colors == undefined) {
+            const colors = {
+                food : '#8D230F',
+                sport : '#1E434C',
+                culture : '#9B4F0F',
+                education : '#C99E10',
+                bank : '#819672'
+            }
+
             for(let i = 0; i < this.arr.length; i++) {
-                if(this.arr[i].type == 'food') {
-                    result.push('#8D230F')
-                } if(this.arr[i].type == 'sport') {
-                    result.push('#1E434C')
-                } if(this.arr[i].type == 'culture') {
-                    result.push('#9B4F0F')
-                } if(this.arr[i].type == 'education') {
-                    result.push('#C99E10')
-                } if(this.arr[i].type == 'bank') {
-                    result.push('#819672')
-                }
+                result.push(colors[this.arr[i].type])
             }
         } else {
             // For best time

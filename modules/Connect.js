@@ -3,9 +3,19 @@ class Connect {
         this.database = database
     }
 
-    get() {
-        return this.database
-    } 
+    get(key, value) {
+        if(key !== undefined && value !== undefined) {
+            for(let i = 0; i < this.database.length; i++) {
+                if(this.database[i][key] == value) {
+                    return this.database[i]
+                } else {
+                    return 'Incorrect data'
+                }
+            }
+        } else {
+            return this.database
+        }
+    }   
 
     post(value) {
         this.database.push(value)     
@@ -25,6 +35,8 @@ class Connect {
         for(let i = 0; i < this.database.length; i++) {
             if(this.database[i][key] == value) {
                 delete this.database[i]
+            } else {
+                return 'Incorrect data'
             }
         }
     }

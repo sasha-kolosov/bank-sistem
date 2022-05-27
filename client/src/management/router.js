@@ -1,5 +1,5 @@
 {
-    const items = document.getElementsByClassName('router')
+    const items = document.getElementsByTagName('router')
 
     for(let i = 0; i < items.length; i++) {
         items[i].addEventListener('click', () => {
