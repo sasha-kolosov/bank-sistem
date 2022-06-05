@@ -6,14 +6,49 @@ class Checked {
     }
 
     startChecked() {
-        if(this.moneyInput.length > 0 && this.recipientInput.length > 0 && this.senderInput.length > 0) {
-            object = { status: 200 }
-            return object
-        } else if(this.moneyInput.length == 0 || this.recipientInput.length == 0 || this.senderInput.length == 0) {
-            object = { status: 400 }
+        if(this.moneyInput !== "" && this.recipientInput !== "" && this.senderInput !== "") {
+            if(this.recipientInput == this.senderInput) {
+                const object = { status: 400 }
+                return object
+            }
+            const cards = new Connect(cardsProDB).get()
+            let recipient = false
+            let sender = false
+            for(let i = 0; i < cards.length; i++) {
+                if(cards[i].id == this.recipientInput) {
+                    recipient = true
+                    break
+                } else {
+                    recipient = false
+                }
+            }
+
+            for(let i = 0; i < cards.length; i++) {
+                if(cards[i].id == this.senderInput) {
+                    sender = true
+                    break
+                } else {
+                    sender = false
+                }
+            }
+
+            if(recipient == true && sender == true && this.moneyInput > 0) {
+                const object = {
+                    senderId: this.senderInput,
+                    recipientId: this.recipientInput,
+                    money: this.moneyInput, 
+                    status: 200 
+                }
+                return object
+            } else {
+                const object = { status: 400 }
+                return object
+            }
+        } else if(this.moneyInput == "" || this.recipientInput == "" || this.senderInput == "") {
+            const object = { status: 400 }
             return object
         } else {
-            object = { status: 500 }
+            const object = { status: 500 }
             return object
         }
     }

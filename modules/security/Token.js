@@ -1,6 +1,6 @@
 class Token {
     constructor(options) {
-        this.checked = options.checked // object from class checkTransfer
+        this.checked = options.checked // object from class Checked
     }
 
     getToken() {
