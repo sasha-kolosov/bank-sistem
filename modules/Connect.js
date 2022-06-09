@@ -8,8 +8,6 @@ class Connect {
             for(let i = 0; i < this.database.length; i++) {
                 if(this.database[i][key] == value) {
                     return this.database[i]
-                } else {
-                    return 'Incorrect data'
                 }
             }
         } else {
@@ -25,9 +23,7 @@ class Connect {
         for(let i = 0; i < this.database.length; i++) {
             if(this.database[i][keySearch] == valueSearch) {
                 this.database[i][key] = value
-            } else {
-                return 'Incorrect data'
-            }
+            } 
         }
     }
 
@@ -35,8 +31,6 @@ class Connect {
         for(let i = 0; i < this.database.length; i++) {
             if(this.database[i][key] == value) {
                 delete this.database[i]
-            } else {
-                return 'Incorrect data'
             }
         }
     }
