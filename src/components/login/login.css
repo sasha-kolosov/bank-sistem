@@ -1,0 +1,216 @@
+DIV.Login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+DIV.Login__form {
+    width: 550px;
+    height: 520px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06), 0 3px 6px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+}
+
+DIV.Login__form-title {
+    width: 550px;
+    height: 60px;
+    padding-left: 25px;
+    padding-top: 30px;
+    font-size: 36px;
+}
+
+DIV.Login__form-email,
+DIV.Login__form-password {
+    width: 550px;
+    height: 80px;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+INPUT.Login__form-email-input,
+INPUT.Login__form-password-input {
+    width: 500px;
+    height: 50px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    background-color: white;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    transition: all 0.26s linear;
+}
+
+INPUT ~ LABEL {
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+    color: #aaa;
+    transition: all 0.26s linear;
+}
+
+INPUT:focus {
+    border-bottom: 2px solid #26a69a;
+}
+
+INPUT:focus ~ LABEL {
+    color:#26a69a;
+    margin-top: -56px;
+}
+
+DIV.Login__form-button {
+    width: 550px;
+    height: 80px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+BUTTON.Login__form-button-submit {
+    width: 140px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: #26a69a;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 2px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06), 0 3px 6px rgba(0, 0, 0, 0.12);
+    transition: all 0.26s linear;
+}
+
+BUTTON.Login__form-button-submit:hover {
+    background-color: #4db6ac;
+}
+
+@media (max-width: 1440px) {
+    DIV.Login__form {
+        width: 525px;
+        height: 520px;
+    }
+
+    DIV.Login__form-title {
+        width: 525px;
+    }
+
+    DIV.Login__form-email,
+    DIV.Login__form-password {
+        width: 525px;
+    }
+
+    INPUT.Login__form-email-input,
+    INPUT.Login__form-password-input {
+        width: 475px;
+    }
+
+    DIV.Login__form-button {
+        width: 525px;
+    }
+}
+
+@media (max-width: 1024px) {
+    DIV.Login__form {
+        width: 500px;
+        height: 520px;
+    }
+
+    DIV.Login__form-title {
+        width: 500px;
+    }
+
+    DIV.Login__form-email,
+    DIV.Login__form-password {
+        width: 500px;
+    }
+
+    INPUT.Login__form-email-input,
+    INPUT.Login__form-password-input {
+        width: 450px;
+    }
+
+    DIV.Login__form-button {
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    DIV.Login__form {
+        width: 450px;
+        height: 520px;
+    }
+
+    DIV.Login__form-title {
+        width: 450px;
+    }
+
+    DIV.Login__form-email,
+    DIV.Login__form-password {
+        width: 450px;
+    }
+
+    INPUT.Login__form-email-input,
+    INPUT.Login__form-password-input {
+        width: 400px;
+    }
+
+    DIV.Login__form-button {
+        width: 450px;
+    }
+}
+
+@media (max-width: 425px) {
+    DIV.Login__form {
+        width: 380px;
+        height: 520px;
+    }
+
+    DIV.Login__form-title {
+        width: 380px;
+    }
+
+    DIV.Login__form-email,
+    DIV.Login__form-password {
+        width: 380px;
+    }
+
+    INPUT.Login__form-email-input,
+    INPUT.Login__form-password-input {
+        width: 330px;
+    }
+
+    DIV.Login__form-button {
+        width: 380px;
+    }
+}
+
+@media (max-width: 375px) {
+    DIV.Login__form {
+        width: 350px;
+        height: 520px;
+    }
+
+    DIV.Login__form-title {
+        width: 350px;
+    }
+
+    DIV.Login__form-email,
+    DIV.Login__form-password {
+        width: 350px;
+    }
+
+    INPUT.Login__form-email-input,
+    INPUT.Login__form-password-input {
+        width: 300px;
+    }
+
+    DIV.Login__form-button {
+        width: 350px;
+    }
+}

@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('.././components/login/login.css');
+
 * {
     margin: 0;
     user-select: none;
-    padding: 0;box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-#root {
+DIV#root {
     width: 100vw;
     height: 100vh;
 }

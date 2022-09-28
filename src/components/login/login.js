@@ -1,7 +1,36 @@
 class Login {
     render() {
-        return (`
-            <h1>Register page</h1>
-        `)
+        return (`<div class="Login">
+            <div class="Login__form">
+                <div class="Login__form-title">
+                    Login
+                </div>
+                <div class="Login__form-email">
+                    <input 
+                        type="email" 
+                        name="email"
+                        class="Login__form-email-input" 
+                        id="login-form-email-input"
+                    />
+                    <label for="login-form-email-input">Email</label>
+                </div>
+                <div class="Login__form-password">
+                    <input 
+                        type="password" 
+                        name="password"
+                        class="Login__form-password-input" 
+                        id="login-form-password-input"
+                    />
+                    <label for="login-form-password-input">Password</label>
+                </div>
+                <div class="Login__form-button">
+                    <button 
+                        type="button" 
+                        class="Login__form-button-submit"
+                        id="login-form-button-submit"
+                    >LOGIN</button>
+                </div>
+            </div>
+        <div>`)
     }
 }
