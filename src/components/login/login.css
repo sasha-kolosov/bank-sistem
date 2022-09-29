@@ -3,6 +3,7 @@ DIV.Login {
     height: 100vh;
     display: flex;
     align-items: center; 
+    background-color: rgb(245, 245, 245);
     justify-content: center;
 }
 
@@ -44,7 +45,8 @@ INPUT.Login__form-password-input {
     transition: all 0.26s linear;
 }
 
-INPUT ~ LABEL {
+INPUT.Login__form-email-input ~ LABEL,
+INPUT.Login__form-password-input ~ LABEL {
     font-size: 13px;
     display: block;
     margin-top: 10px;
@@ -52,11 +54,13 @@ INPUT ~ LABEL {
     transition: all 0.26s linear;
 }
 
-INPUT:focus {
+INPUT.Login__form-email-input:focus,
+INPUT.Login__form-password-input:focus {
     border-bottom: 2px solid #26a69a;
 }
 
-INPUT:focus ~ LABEL {
+INPUT.Login__form-email-input:focus ~ LABEL,
+INPUT.Login__form-password-input:focus ~ LABEL {
     color:#26a69a;
     margin-top: -56px;
 }
@@ -88,6 +92,17 @@ BUTTON.Login__form-button-submit {
 
 BUTTON.Login__form-button-submit:hover {
     background-color: #4db6ac;
+}
+
+DIV.Login__form-register {
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+SPAN.Login__form-register-link {
+    color: orange;
+    cursor: pointer;
 }
 
 @media (max-width: 1440px) {

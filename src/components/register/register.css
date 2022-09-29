@@ -1,0 +1,246 @@
+DIV.Register {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    background-color: rgb(245, 245, 245);
+    justify-content: center;
+}
+
+DIV.Register__form {
+    width: 550px;
+    height: 650px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06), 0 3px 6px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+}
+
+DIV.Register__form-title {
+    width: 550px;
+    height: 60px;
+    padding-left: 25px;
+    padding-top: 30px;
+    font-size: 36px;
+}
+
+DIV.Register__form-email,
+DIV.Register__form-password,
+DIV.Register__form-phone {
+    width: 550px;
+    height: 80px;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+INPUT.Register__form-email-input,
+INPUT.Register__form-password-input,
+INPUT.Register__form-phone-input {
+    width: 500px;
+    height: 50px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    background-color: white;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    transition: all 0.26s linear;
+}
+
+INPUT.Register__form-email-input ~ LABEL,
+INPUT.Register__form-password-input ~ LABEL,
+INPUT.Register__form-phone-input ~ LABEL {
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+    color: #aaa;
+    transition: all 0.26s linear;
+}
+
+INPUT.Register__form-email-input:focus,
+INPUT.Register__form-password-input:focus,
+INPUT.Register__form-phone-input:focus {
+    border-bottom: 2px solid #26a69a;
+}
+
+INPUT.Register__form-email-input:focus ~ LABEL,
+INPUT.Register__form-password-input:focus ~ LABEL,
+INPUT.Register__form-phone-input:focus ~ LABEL {
+    color:#26a69a;
+    margin-top: -56px;
+}
+
+DIV.Register__form-button {
+    width: 550px;
+    height: 80px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+BUTTON.Register__form-button-submit {
+    width: 140px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: #26a69a;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 2px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06), 0 3px 6px rgba(0, 0, 0, 0.12);
+    transition: all 0.26s linear;
+}
+
+BUTTON.Register__form-button-submit:hover {
+    background-color: #4db6ac;
+}
+
+DIV.Register__form-register {
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+SPAN.Register__form-register-link {
+    color: orange;
+    cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+    DIV.Register__form {
+        width: 525px;
+        height: 650px;
+    }
+
+    DIV.Register__form-title {
+        width: 525px;
+    }
+
+    DIV.Register__form-email,
+    DIV.Register__form-password,
+    DIV.Register__form-phone {
+        width: 525px;
+    }
+
+    INPUT.Register__form-email-input,
+    INPUT.Register__form-password-input,
+    INPUT.Register__form-phone-input {
+        width: 475px;
+    }
+
+    DIV.Register__form-button {
+        width: 525px;
+    }
+}
+
+@media (max-width: 1024px) {
+    DIV.Register__form {
+        width: 500px;
+        height: 650px;
+    }
+
+    DIV.Register__form-title {
+        width: 500px;
+    }
+
+    DIV.Register__form-email,
+    DIV.Register__form-password,
+    DIV.Register__form-phone {
+        width: 500px;
+    }
+
+    INPUT.Register__form-email-input,
+    INPUT.Register__form-password-input,
+    INPUT.Register__form-phone-input {
+        width: 450px;
+    }
+
+    DIV.Register__form-button {
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    DIV.Register__form {
+        width: 450px;
+        height: 650px;
+    }
+
+    DIV.Register__form-title {
+        width: 450px;
+    }
+
+    DIV.Register__form-email,
+    DIV.Register__form-password,
+    DIV.Register__form-phone {
+        width: 450px;
+    }
+
+    INPUT.Register__form-email-input,
+    INPUT.Register__form-password-input,
+    INPUT.Register__form-phone-input {
+        width: 400px;
+    }
+
+    DIV.Register__form-button {
+        width: 450px;
+    }
+}
+
+@media (max-width: 425px) {
+    DIV.Register__form {
+        width: 380px;
+        height: 650px;
+    }
+
+    DIV.Register__form-title {
+        width: 380px;
+    }
+
+    DIV.Register__form-email,
+    DIV.Register__form-password,
+    DIV.Register__form-phone {
+        width: 380px;
+    }
+
+    INPUT.Register__form-email-input,
+    INPUT.Register__form-password-input,
+    INPUT.Register__form-phone-input {
+        width: 330px;
+    }
+
+    DIV.Register__form-button {
+        width: 380px;
+    }
+}
+
+@media (max-width: 375px) {
+    DIV.Register__form {
+        width: 350px;
+        height: 650px;
+    }
+
+    DIV.Register__form-title {
+        width: 350px;
+    }
+
+    DIV.Register__form-email,
+    DIV.Register__form-password,
+    DIV.Register__form-phone {
+        width: 350px;
+    }
+
+    INPUT.Register__form-email-input,
+    INPUT.Register__form-password-input,
+    INPUT.Register__form-phone-input {
+        width: 300px;
+    }
+
+    DIV.Register__form-button {
+        width: 350px;
+    }
+}

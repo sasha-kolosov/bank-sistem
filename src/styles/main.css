@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('.././components/login/login.css');
+@import url('.././components/register/register.css');
 
 * {
     margin: 0;
@@ -12,4 +13,8 @@
 DIV#root {
     width: 100vw;
     height: 100vh;
+}
+
+[page] {
+    display: none;
 }

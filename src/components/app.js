@@ -3,6 +3,7 @@ class App {
         if(window.localStorage.getItem('user') === null) {
             return (`
                 ${ new Login().render() }
+                ${ new Register().render() }
             `)
         } else {
             return (`
