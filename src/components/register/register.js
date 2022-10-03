@@ -2,7 +2,7 @@ class Register {
     render() {
         return (`<div page="register">
             <div class="Register">
-                <div class="Register__form">
+                <div class="Register__form" id="register">
                     <div class="Register__form-title">
                         Register
                     </div>

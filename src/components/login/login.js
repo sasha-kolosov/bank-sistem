@@ -2,7 +2,7 @@ class Login {
     render() {
         return (`<div page="login">
             <div class="Login">
-                <div class="Login__form">
+                <div class="Login__form" id="login">
                     <div class="Login__form-title">
                         Login
                     </div>

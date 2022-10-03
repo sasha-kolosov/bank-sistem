@@ -3,7 +3,7 @@ DIV.Login {
     height: 100vh;
     display: flex;
     align-items: center; 
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(221, 221, 221);
     justify-content: center;
 }
 
