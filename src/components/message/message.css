@@ -1,0 +1,18 @@
+.Message {
+    width: 220px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 12px 0 0 12px;
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+    background-color: rgba(235, 52, 52, 0.671);
+    transition: all 1s linear;
+}
+
+.Message__text {
+    color: white;
+    padding-top: 5px;
+}

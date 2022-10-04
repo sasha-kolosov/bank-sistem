@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('.././components/message/message.css');
 @import url('.././components/login/login.css');
 @import url('.././components/register/register.css');
 
