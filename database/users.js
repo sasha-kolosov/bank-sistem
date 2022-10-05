@@ -11,6 +11,18 @@ if(window.localStorage.getItem('users') === null) {
             finance: {
                 users: []
             }
+        },
+        {
+            id: 2,
+            email: 'sasha.kolosov.sasha@gmail.com',
+            password: 'cfif12345',
+            phone: '89152399143',
+            name: 'Anton',
+            surname: 'Demin',
+            age: 16,
+            finance: {
+                users: []
+            }
         }
     ]))
 }

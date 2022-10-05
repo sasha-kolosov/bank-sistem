@@ -16,17 +16,23 @@ class Connect {
             throw new Error('Incorrect data')
         } else if (typeof key == 'object' && typeof value == 'object') {
             for(let i = 0; i < database.length; i++) {
-                let status = 200
+                
+                let count = 0
+
                 for(let j = 0; j < key.length; j++) {
-                    if(database[i][`${key[j]}`] != value[j]) {
-                        status = 500
+                    if(database[i][`${key[j]}`] == value[j]) {
+                        count += 1
                     }
                 }
-                if(status == 200) {
-                    return database[i]
+
+                if(count != key.length) {
+                    count = 0
                 } else {
-                    throw new Error('Incorrect data')
+                    return database[i]
                 }
+            }
+            {
+                throw new Error('Incorrect data')
             }
         }
     }
