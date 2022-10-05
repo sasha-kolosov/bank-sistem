@@ -10,9 +10,11 @@ function login() {
 
                     try {
                         window.localStorage.setItem('user', JSON.stringify(user))
-                        root.innerHTML = new App().render()
-                        router()
-                        CONFIG.render()
+                        {
+                            root.innerHTML = new App().render()
+                            router()
+                            CONFIG.render()
+                        }
                     } catch(e) {
                         if(!e.name == 'TypeError') {
                             console.log(e)

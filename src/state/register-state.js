@@ -10,11 +10,14 @@ function register() {
                     new Message('User already exists').init()
                 } catch(e) {
                     try {
-                        const user = users.post(CONFIG.newUser(`${CONFIG.elements.register.registerEmail.value}`, `${CONFIG.elements.register.registerPassword.value}`, `${CONFIG.elements.register.registerPhone.value}`))
+                        const phone = CONFIG.elements.register.registerPhone.value.replace(/[^0-9]/g, '')
+                        const user = users.post(CONFIG.newUser(`${CONFIG.elements.register.registerEmail.value}`, `${CONFIG.elements.register.registerPassword.value}`, `${phone}`))
                         window.localStorage.setItem('user', JSON.stringify(user))
-                        root.innerHTML = new App().render()
-                        router()
-                        CONFIG.render()
+                        {
+                            root.innerHTML = new App().render()
+                            router()
+                            CONFIG.render()
+                        }
                     } catch(e) {
                         if(!e.name == 'TypeError') {
                             console.log(e)

@@ -12,6 +12,7 @@ class Register {
                             name="tel"
                             class="Register__form-phone-input" 
                             id="register-form-phone-input"
+                            value="+7"
                         />
                         <label for="register-form-phone-input">Phone</label>
                     </div>
