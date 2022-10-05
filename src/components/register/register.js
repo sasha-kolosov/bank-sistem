@@ -8,8 +8,8 @@ class Register {
                     </div>
                     <div class="Register__form-phone">
                         <input 
-                            type="phone" 
-                            name="phone"
+                            type="tel" 
+                            name="tel"
                             class="Register__form-phone-input" 
                             id="register-form-phone-input"
                         />

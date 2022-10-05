@@ -4,9 +4,7 @@ class Connect {
     }
 
     get(key, value) {
-
         const database = JSON.parse(window.localStorage.getItem(`${this.database}`))
-
         if ((key === undefined && value === undefined) && (typeof key !== 'object' && typeof value !== 'object')) {
             return database
         } else if ((key && value) && (typeof key !== 'object' && typeof value !== 'object')) {
@@ -15,7 +13,6 @@ class Connect {
                     return database[i]
                 }
             }
-
             throw new Error('Incorrect data')
         } else if (typeof key == 'object' && typeof value == 'object') {
             for(let i = 0; i < database.length; i++) {
@@ -31,6 +28,18 @@ class Connect {
                     throw new Error('Incorrect data')
                 }
             }
+        }
+    }
+
+    post(data) {
+        if(typeof data == 'object') {
+            const database = JSON.parse(window.localStorage.getItem(`${this.database}`))
+            data.id = database[database.length - 1].id + 1
+            database.push(data)
+            window.localStorage.setItem(`${this.database}`, JSON.stringify(database))
+            return data
+        } else {
+            throw new Error('Incorrect data')
         }
     }
 }

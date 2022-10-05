@@ -7,7 +7,10 @@ if(window.localStorage.getItem('users') === null) {
             phone: '89152399143',
             name: 'Sasha',
             surname: 'Kolosov',
-            age: 16
+            age: 16,
+            finance: {
+                users: []
+            }
         }
     ]))
 }

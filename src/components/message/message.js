@@ -14,10 +14,12 @@ class Message {
         const block = document.getElementsByClassName('Message')[0]
 
         block.style.opacity = '1'
+        block.style.top = '5vh'
         message.innerHTML = this.message
 
         setTimeout(() => {
+            block.style.top = '0'
             block.style.opacity = '0'
-        }, 2000)
+        }, 2600)
     }
 }
