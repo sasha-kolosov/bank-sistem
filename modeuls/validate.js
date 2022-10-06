@@ -2,7 +2,7 @@ class Validate {
     constructor(form) {
         this.form = form
         this.EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu
-        this.TEL_REGEXP = /^(\+7)(\(\d{3}\)|\d{3})\d{7}$/
+        this.TEL_REGEXP = /^(\+7|8)(\(\d{3}\)|\d{3})\d{7}$/
         this.response = {
             progress: [],
             status: 500

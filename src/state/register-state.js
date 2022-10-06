@@ -6,12 +6,12 @@ function register() {
 
             if(response.status === 200) {
                 try {
-                    users.get('email', `${CONFIG.elements.register.registerEmail.value}`)
+                    users.get('email', `${CONFIG.elements.register.registerEmail.value.toLowerCase()}`)
                     new Message('User already exists').init()
                 } catch(e) {
                     try {
                         const phone = CONFIG.elements.register.registerPhone.value.replace(/[^0-9]/g, '')
-                        const user = users.post(CONFIG.newUser(`${CONFIG.elements.register.registerEmail.value}`, `${CONFIG.elements.register.registerPassword.value}`, `${phone}`))
+                        const user = users.post(CONFIG.newUser(`${CONFIG.elements.register.registerEmail.value.toLowerCase()}`, `${CONFIG.elements.register.registerPassword.value}`, `${phone}`))
                         window.localStorage.setItem('user', JSON.stringify(user))
                         {
                             root.innerHTML = new App().render()

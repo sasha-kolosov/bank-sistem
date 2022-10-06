@@ -6,7 +6,7 @@ function login() {
 
             if(response.status === 200) {
                 try {
-                    const user = users.get(['email', 'password'], [`${CONFIG.elements.login.loginEmail.value}`, `${CONFIG.elements.login.loginPassword.value}`])
+                    const user = users.get(['email', 'password'], [`${CONFIG.elements.login.loginEmail.value.toLowerCase()}`, `${CONFIG.elements.login.loginPassword.value}`])
 
                     try {
                         window.localStorage.setItem('user', JSON.stringify(user))
