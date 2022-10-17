@@ -1,0 +1,22 @@
+DIV.HeaderMedia {
+    width: 100%;
+}
+
+DIV.HeaderMedia__container {
+    margin: 25px;
+}
+
+DIV.HeaderMedia__container-item {
+    height: 50px;
+    cursor: pointer;
+}
+
+DIV.HeaderMedia__container-item-text {
+    height: 24px;
+    font-size: 18px;
+}
+
+SPAN.HeaderMedia__container-item-text-icon {
+    margin-left: 5px;
+    color: rgb(94, 94, 94);
+}

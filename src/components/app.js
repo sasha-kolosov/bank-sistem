@@ -9,7 +9,16 @@ class App {
         } else {
             return (`
                 ${ new Message().render() }
-                <h1>Hello ${JSON.parse(window.localStorage.getItem('user')).name}</h1>
+                ${ new Header().render() }
+                <div class="router-container">
+                    <div page="home"><h1>Home</h1></div>
+                    <div page="finance"><h1>Finance</h1></div>
+                    <div page="credits"><h1>Credits</h1></div>
+                    <div page="deposits"><h1>Deposits</h1></div>
+                    <div page="shares"><h1>Shares</h1></div>
+                    <div page="settings"><h1>Settings</h1></div>
+                    ${ new HeaderMedia().render() }
+                </div>
             `)
         }
     }

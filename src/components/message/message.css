@@ -9,6 +9,7 @@
     text-align: center;
     background-color: rgb(100, 100, 100);
     transition: all 0.4s linear;
+    display: none;
 }
 
 .Message__text {
