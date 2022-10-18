@@ -16,7 +16,7 @@ class App {
                     <div page="credits"><h1>Credits</h1></div>
                     <div page="deposits"><h1>Deposits</h1></div>
                     <div page="shares"><h1>Shares</h1></div>
-                    <div page="settings"><h1>Settings</h1></div>
+                    ${ new Settings().render() }
                     ${ new HeaderMedia().render() }
                 </div>
             `)

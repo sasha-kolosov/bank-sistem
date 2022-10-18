@@ -1,8 +1,4 @@
 const CONFIG = {
-    render() {
-        login()
-        register()
-    },
     newUser(email, password, phone) {
         return {
             id: 0,

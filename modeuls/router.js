@@ -30,10 +30,16 @@ class Router {
                 for(let i = 0; i < this.pages.length; i++) {
                     this.pages[i].style.display = 'none'
                 }
-                pages[`${window.location.hash.slice(2)}`].style.display = 'block'
+                try {
+                    pages[`${window.location.hash.slice(2)}`].style.display = 'block'
+                } catch(e) {
+                    if(e.name !== 'TypeError') {
+                        console.log(e)
+                    }
+                }
             })
         } catch(e) {
-            if(!e.name == 'TypeError') {
+            if(e.name !== 'TypeError') {
                 console.log(e)
             }
         }

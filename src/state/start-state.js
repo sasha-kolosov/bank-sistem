@@ -1,1 +1,4 @@
-CONFIG.render()
+{   
+    login()
+    register()
+}

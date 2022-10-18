@@ -12,8 +12,8 @@ function login() {
                         window.localStorage.setItem('user', JSON.stringify(user))
                         {
                             root.innerHTML = new App().render()
-                            router()
-                            CONFIG.render()
+                            { new Router().init() }
+                            login()
                         }
                     } catch(e) {
                         if(!e.name == 'TypeError') {

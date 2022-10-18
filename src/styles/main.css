@@ -5,6 +5,7 @@
 @import url('.././components/register/register.css');
 @import url('.././components/header/header.css');
 @import url('.././components/header/header-media/header-media.css');
+@import url('.././components/settings/settings.css');
 
 * {
     margin: 0;
