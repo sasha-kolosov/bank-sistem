@@ -1,19 +1,23 @@
 function login() {
     if(window.localStorage.getItem('user') === null) {
         const users = new Connect('users')
-        CONFIG.elements.login.loginButton.addEventListener('click', () => {
+        const state = CONFIG.elements().login
+        state.loginButton.addEventListener('click', () => {
             const response = new Validate('login').init()
 
             if(response.status === 200) {
                 try {
-                    const user = users.get(['email', 'password'], [`${CONFIG.elements.login.loginEmail.value.toLowerCase()}`, `${CONFIG.elements.login.loginPassword.value}`])
+                    const user = users.get(['email', 'password'], [`${state.loginEmail.value.toLowerCase()}`, `${state.loginPassword.value}`])
 
                     try {
                         window.localStorage.setItem('user', JSON.stringify(user))
                         {
                             root.innerHTML = new App().render()
                             { new Router().init() }
-                            login()
+                            CONFIG.elements()
+                            {
+                                settings()
+                            }
                         }
                     } catch(e) {
                         if(!e.name == 'TypeError') {

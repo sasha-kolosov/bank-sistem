@@ -11,7 +11,7 @@ class App {
                 ${ new Message().render() }
                 ${ new Header().render() }
                 <div class="router-container">
-                    <div page="home"><h1>Home</h1></div>
+                    ${ new Home().render() }
                     <div page="finance"><h1>Finance</h1></div>
                     <div page="credits"><h1>Credits</h1></div>
                     <div page="deposits"><h1>Deposits</h1></div>

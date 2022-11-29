@@ -2,3 +2,7 @@
     login()
     register()
 }
+
+{
+    settings()
+}

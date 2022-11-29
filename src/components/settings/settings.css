@@ -1,3 +1,125 @@
 DIV.Settings {
     width: 100%;
 }
+
+DIV.Settings .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+DIV.Settings__container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+DIV.Settings__container-logout {
+    height: 70px;
+    border: 1px solid rgb(156, 25, 25);
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+}
+
+DIV.Settings__container-logout-text {
+    font-size: 18px;
+    flex: 7;
+    padding: 25px;
+}
+
+DIV.Settings__container-logout-button {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+}
+
+DIV.Settings__container-logout-button BUTTON {
+    width: 140px;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #e57373;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+DIV.Settings__container-logout-button BUTTON:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+@media (max-width: 1398px) {
+    DIV.Settings__container-logout {
+        height: 90px;
+    }
+
+    DIV.Settings__container-logout-button {
+        padding: 25px;
+    }
+
+    DIV.Settings__container-logout-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 910px) {
+    DIV.Settings__container-logout {
+        height: 110px;
+    }
+
+    DIV.Settings__container-logout-button {
+        padding: 35px;  
+    }
+}
+
+@media (max-width: 820px) {
+    DIV.Settings__container-logout {
+        height: 180px;
+        display: block;
+    }
+
+    DIV.Settings__container-logout-button {
+        padding: 25px;  
+    }
+}
+
+@media (max-width: 768px) {
+    DIV.Settings__container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 540px) {
+    DIV.Settings__container-logout {
+        height: 220px;
+        display: block;
+    }
+
+    DIV.Settings__container-logout-button {
+        padding: 25px;  
+    }
+}
+
+@media (max-width: 425px) {
+    DIV.Settings__container-logout-button {
+        padding: 20px;  
+    }
+}
+
+@media (max-width: 320px) {
+    DIV.Settings__container-logout {
+        height: 240px;
+        display: block;
+    }
+
+    DIV.Settings__container-logout-button {
+        padding: 20px;  
+    }
+}

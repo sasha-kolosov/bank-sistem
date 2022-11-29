@@ -1,22 +1,26 @@
 function register() {
     if(window.localStorage.getItem('user') === null) {
         const users = new Connect('users')
-        CONFIG.elements.register.registerButton.addEventListener('click', () => {
+        const config = CONFIG.elements().register
+        config.registerButton.addEventListener('click', () => {
             const response = new Validate('register').init()
 
             if(response.status === 200) {
                 try {
-                    users.get('email', `${CONFIG.elements.register.registerEmail.value.toLowerCase()}`)
+                    users.get('email', `${config.registerEmail.value.toLowerCase()}`)
                     new Message('User already exists').init()
                 } catch(e) {
                     try {
-                        const phone = CONFIG.elements.register.registerPhone.value.replace(/[^0-9]/g, '')
-                        const user = users.post(CONFIG.newUser(`${CONFIG.elements.register.registerEmail.value.toLowerCase()}`, `${CONFIG.elements.register.registerPassword.value}`, `${phone}`))
+                        const phone = config.registerPhone.value.replace(/[^0-9]/g, '')
+                        const user = users.post(CONFIG.newUser(`${config.registerEmail.value.toLowerCase()}`, `${config.registerPassword.value}`, `${phone}`))
                         window.localStorage.setItem('user', JSON.stringify(user))
                         {
                             root.innerHTML = new App().render()
                             { new Router().init() }
-                            register()
+                            CONFIG.elements()
+                            {
+                                settings()
+                            }
                         }
                     } catch(e) {
                         if(!e.name == 'TypeError') {
