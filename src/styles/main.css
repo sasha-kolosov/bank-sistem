@@ -28,3 +28,7 @@ DIV.router-container {
 [page] {
     display: none;
 }
+
+body {
+    color: rgba(0,0,0,.8)
+}

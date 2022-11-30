@@ -1,3 +1,64 @@
 DIV.Home {
     width: 100%;
 }
+
+DIV.Home__container {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+DIV.Home__offers {
+    width: 80%;
+    display: flex;
+}
+
+DIV.Home__offers-offer {
+    flex: 1;
+}
+
+DIV.Home__offers-offer-finance {
+    width: 340px;
+    height: 420px;
+    padding: 25px;
+    border-radius: 16px;
+    transition: all .3s linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    background-image: url('https://img.freepik.com/free-photo/gold-piggy-bank-with-gold-coin-money-stacks-growing-arrow-business-finance-savings-investment-concept-background-3d-illustration_56104-1962.jpg?w=1480&t=st=1669800272~exp=1669800872~hmac=e9f132ee7b442908727751f9cac913d97fba45099b7692868a06cc5605d72372');
+}
+
+DIV.Home__offers-offer-finance:hover {
+    box-shadow: 0px 5px 19px 2px #eee;
+}
+
+DIV.Home__offers-offer-finance-title {
+    text-align: center;
+    height: 50px;
+    font-size: 24px;
+}
+
+DIV.Home__offers-offer-finance-text {
+    text-align: center;
+    height: 270px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+DIV.Home__offers-offer-finance-button {
+    text-align: center;
+}
+
+DIV.Home__offers-offer-finance-button BUTTON {
+    width: 140px;
+    height: 45px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
