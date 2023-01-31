@@ -1,6 +1,6 @@
 class Home {
     render() {
-        return `<div class="Home" page="home">
+        return (`<div class="Home" page="home">
             <div class="Home__container">
                 <div class="Home__offers">
                     <div class="Home__offers-offer">
@@ -25,6 +25,6 @@ class Home {
                     </div>
                 </div>
             </div>
-        </div>`
+        </div>`)
     }
 }

@@ -1,0 +1,77 @@
+DIV.Finance {
+    width: 100%;
+}
+
+DIV.Finance__container {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+DIV.Finance__block {
+    width: 1400px;
+    height: 740px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 16px;
+    padding: 50px;
+    box-shadow: 0 3px 14px rgb(245, 245, 245);
+}
+
+DIV.Finance__block-offers {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+}
+
+DIV.Finance__block-offers-offer {
+    flex: 1;
+}
+
+DIV.Finance__block-offers-offer-cards,
+DIV.Finance__block-offers-offer-bookkeeping,
+DIV.Finance__block-offers-offer-analytics {
+    width: 340px;
+    height: 380px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;    
+    padding-bottom: 30px;
+    transition: all .4s linear;
+}
+
+DIV.Finance__block-offers-offer-cards:hover,
+DIV.Finance__block-offers-offer-bookkeeping:hover,
+DIV.Finance__block-offers-offer-analytics:hover {
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);
+}
+
+DIV.Finance__block-offers-offer-cards BUTTON,
+DIV.Finance__block-offers-offer-bookkeeping BUTTON,
+DIV.Finance__block-offers-offer-analytics BUTTON {
+    height: 45px;
+    width: 140px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+DIV.Finance__block-offers-offer-cards BUTTON {
+    background-color: #fff176;
+}
+
+DIV.Finance__block-offers-offer-bookkeeping BUTTON {
+    background-color: #fff3e0;
+}
+
+DIV.Finance__block-offers-offer-analytics BUTTON  {
+    background-color: #4caf50;
+}

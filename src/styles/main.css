@@ -6,6 +6,10 @@
 @import url('.././components/header/header.css');
 @import url('.././components/header/header-media/header-media.css');
 @import url('../components/home/home.css');
+@import url('../components/finance/finance.css');
+@import url('../components/finance/cards/cards.css');
+@import url('../components/finance/bookkeeping/bookkeeping.css');
+@import url('../components/finance/analytics/analytics.css');
 @import url('.././components/settings/settings.css');
 
 * {
