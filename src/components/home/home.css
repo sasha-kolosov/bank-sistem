@@ -18,7 +18,10 @@ DIV.Home__offers-offer {
     flex: 1;
 }
 
-DIV.Home__offers-offer-finance {
+DIV.Home__offers-offer-finance,
+DIV.Home__offers-offer-credits,
+DIV.Home__offers-offer-deposits,
+DIV.Home__offers-offer-shares {
     width: 340px;
     height: 420px;
     padding: 25px;
@@ -30,28 +33,55 @@ DIV.Home__offers-offer-finance {
     background-image: url('https://img.freepik.com/free-photo/gold-piggy-bank-with-gold-coin-money-stacks-growing-arrow-business-finance-savings-investment-concept-background-3d-illustration_56104-1962.jpg?w=1480&t=st=1669800272~exp=1669800872~hmac=e9f132ee7b442908727751f9cac913d97fba45099b7692868a06cc5605d72372');
 }
 
-DIV.Home__offers-offer-finance:hover {
+DIV.Home__offers-offer-credits {
+    background-image: url('https://img.freepik.com/free-photo/3d-render-tax-payment-financial-business-concept_107791-16584.jpg?w=1380&t=st=1675370290~exp=1675370890~hmac=56bbaad2122e2b6a88ab416da39ac3be92d25eee8bc8e1241c6627e59210a5ab');
+}
+
+DIV.Home__offers-offer-deposits {
+    background-image: url('https://img.freepik.com/free-photo/hand-putting-coin-to-pink-piggy-money-savings-concept-on-pink-background-3d-rendering_56104-1439.jpg?w=1380&t=st=1675370583~exp=1675371183~hmac=7a20763237dc695a3b8b629cf5586ce28ba76bac4fe896690ab218f6dbfb528d');
+}
+
+DIV.Home__offers-offer-shares {
+    background-image: url('https://img.freepik.com/free-photo/isolate-of-green-dollar-money-bag-for-financial-saving-dividend-and-deposit-concept-by-3d-render-illustration_616485-121.jpg?w=1380&t=st=1675371692~exp=1675372292~hmac=f0bce4113373b04e8fd0fbd2722c6123bd1c1409f84f0d8563758704d7798e86');
+}
+
+DIV.Home__offers-offer-finance:hover,
+DIV.Home__offers-offer-credits:hover,
+DIV.Home__offers-offer-deposits:hover,
+DIV.Home__offers-offer-shares:hover {
     box-shadow: 0px 5px 19px 2px #eee;
 }
 
-DIV.Home__offers-offer-finance-title {
+DIV.Home__offers-offer-finance-title,
+DIV.Home__offers-offer-credits-title,
+DIV.Home__offers-offer-deposits-title,
+DIV.Home__offers-offer-shares-title {
     text-align: center;
     height: 50px;
     font-size: 24px;
 }
 
-DIV.Home__offers-offer-finance-text {
+DIV.Home__offers-offer-finance-text,
+DIV.Home__offers-offer-credits-text,
+DIV.Home__offers-offer-deposits-text,
+DIV.Home__offers-offer-shares-text {
     text-align: center;
     height: 270px;
     font-size: 16px;
     line-height: 24px;
 }
 
-DIV.Home__offers-offer-finance-button {
+DIV.Home__offers-offer-finance-button,
+DIV.Home__offers-offer-credits-button,
+DIV.Home__offers-offer-deposits-button,
+DIV.Home__offers-offer-shares-button {
     text-align: center;
 }
 
-DIV.Home__offers-offer-finance-button BUTTON {
+DIV.Home__offers-offer-finance-button BUTTON,
+DIV.Home__offers-offer-credits-button BUTTON,
+DIV.Home__offers-offer-deposits-button BUTTON,
+DIV.Home__offers-offer-shares-button BUTTON {
     width: 140px;
     height: 45px;
     padding: 5px;

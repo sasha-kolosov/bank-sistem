@@ -13,9 +13,9 @@ class App {
                 <div class="router-container">
                     ${ new Home().render() }
                     ${ new Finance().render() }
-                    <div page="credits"><h1>Credits</h1></div>
-                    <div page="deposits"><h1>Deposits</h1></div>
-                    <div page="shares"><h1>Shares</h1></div>
+                    ${ new Credits().render() } 
+                    ${ new Deposits().render() }
+                    ${ new Shares().render() }
                     ${ new Settings().render() }
                     ${ new HeaderMedia().render() }
                     ${ new Cards().render() }

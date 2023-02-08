@@ -1,0 +1,10 @@
+DIV.Credits {
+    width: 100%;
+}
+
+DIV.Credits__container {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}

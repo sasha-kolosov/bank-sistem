@@ -9,7 +9,7 @@ if(window.localStorage.getItem('users') === null) {
             surname: 'Kolosov',
             age: 16,
             finance: {
-                users: []
+                cards: [1]
             }
         },
         {
@@ -21,7 +21,7 @@ if(window.localStorage.getItem('users') === null) {
             surname: 'Demin',
             age: 16,
             finance: {
-                users: []
+                cards: [2]
             }
         },
         {
@@ -33,7 +33,7 @@ if(window.localStorage.getItem('users') === null) {
             surname: 'Leshenko',
             age: 17,
             finance: {
-                users: []
+                cards: [3]
             }
         }
     ]))

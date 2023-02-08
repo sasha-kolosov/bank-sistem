@@ -1,0 +1,10 @@
+DIV.Shares {
+    width: 100%;
+}
+
+DIV.Shares__container {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}

@@ -10,15 +10,21 @@
 </head>
 <body>
     <div id="root"></div>
+    <!-- Database -->
+        <script src="./database/transactions.js"></script>
+        <script src="./database/cards.js"></script>
+        <script src="./database/users.js"></script>
+    <!-- -------- -->
+
     <!-- Modules -->
+        <script src="./modeuls/object-remaker.js"></script>
         <script src="./modeuls/router.js"></script>
         <script src="./modeuls/connect.js"></script>
         <script src="./modeuls/validate.js"></script>
+        <!-- Transfer -->
+            <script src="./modeuls/transfers/new-transaction.js"></script>
+        <!-- -------- -->
     <!-- ------- -->
-
-    <!-- Database -->
-        <script src="./database/users.js"></script>
-    <!-- -------- -->
 
     <!-- Components -->
         <script src="./src/components/message/message.js"></script>
@@ -47,6 +53,18 @@
                 <script src="./src/components/finance/analytics/analytics.js"></script>
             <!-- --------- -->
         <!-- ------- -->
+
+        <!-- Credits -->
+            <script src="./src/components/credits/credits.js"></script>
+        <!-- ------- -->
+
+        <!-- Deposits -->
+            <script src="./src/components/deposits/deposits.js"></script>
+        <!-- -------- -->
+
+        <!-- Shares -->
+            <script src="./src/components/shares/shares.js"></script>
+        <!-- ------ -->
 
         <!-- Settings -->
             <script src="./src/components/settings/settings.js"></script>
