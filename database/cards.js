@@ -24,6 +24,13 @@ if(window.localStorage.getItem('cards') === null) {
             number: '9001 0000 0000 0003',
             date: '03/29',
             money: 43990.43
+        },
+        {
+            userId: 4,
+            id: 4,
+            number: '9001 0000 0000 0003',
+            date: '05/18',
+            money: 1000.00
         }
     ]))
 }

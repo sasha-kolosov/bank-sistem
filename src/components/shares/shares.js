@@ -2,7 +2,9 @@ class Shares {
     render() {
         return (`<div page="shares" class="Shares">
             <div class="Shares__container">
-                <h1>Shares</h1>
+                <div class="Shares__block">
+                    <h1>Shares page</h1>
+                </div>
             </div>
         </div>`)
     }

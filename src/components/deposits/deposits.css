@@ -8,3 +8,12 @@ DIV.Deposits__container {
     display: flex;
     justify-content: center;
 }
+
+DIV.Deposits__block {
+    width: 1400px;
+    height: 740px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 16px;
+    padding: 50px;
+    box-shadow: 0 3px 14px rgb(245, 245, 245);
+}
