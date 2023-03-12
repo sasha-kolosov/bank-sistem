@@ -8,25 +8,49 @@ class Finance {
                         <div class="Finance__block-offers-offer">
                             <div 
                                 class="Finance__block-offers-offer-cards"
-                                style="background-image: url('https://img.freepik.com/free-photo/3d-render-hand-holding-wallet-with-bank-card_107791-15917.jpg?w=826&t=st=1670254046~exp=1670254646~hmac=eb92314298f45c02f7bfb0b311086dc0753eb7c03ff6e5826b5591abcb785194')" 
+                                style="background-image: url('https://img.freepik.com/premium-vector/3d-credit-card-money-financial-security-for-online-shopping-online-payment-credit-card-with-payment-protection-concept-3d-business-finance-vector-icon-render-illustrator-for-shopping-on-ecommerce_412828-1474.jpg?w=1380')" 
                             >
-                                <button path="finance/cards">Cards</button>
+                                <div class="Finance__block-offers-offer-cards-animate">
+                                    <div class="Finance__block-offers-offer-cards-title">Cards</div>
+                                    <div class="Finance__block-offers-offer-cards-text">
+                                        Increased cashback on depit cards and middle cards, good shopping!
+                                    </div>
+                                    <div class="Finance__block-offers-offer-cards-button">
+                                        <button path="finance/cards">Cards</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="Finance__block-offers-offer">
                             <div 
                                 class="Finance__block-offers-offer-bookkeeping"
-                                style="background-image: url('https://img.freepik.com/free-photo/financial-concept-with-icons-wooden-cubes-calculator-blue-table-flat-lay_176474-9440.jpg?w=1380&t=st=1670255790~exp=1670256390~hmac=fb2d8b56f5a47c5ea9edb6687b710d814b84710a70b1b207a64805f6a59a545e')"
+                                style="background-image: url('https://img.freepik.com/premium-photo/checklist-paper-on-clipboard-with-correct-checked-mark-with-minimal-style-calculator-and-magnifier-on-pink-background-business-financial-or-payment-management-accountant-work-concept-3d-rendering_660344-531.jpg?w=1380')"
                             >
-                                <button path="finance/bookkeeping">Bookkeeping</button>
+                                <div class="Finance__block-offers-offer-bookkeeping-animate">
+                                    <div class="Finance__block-offers-offer-bookkeeping-title">Bookkeeping</div>
+                                    <div class="Finance__block-offers-offer-bookkeeping-text">
+                                        Accounting will allow you to correctly calculate your income and expenses.
+                                    </div>
+                                    <div class="Finance__block-offers-offer-bookkeeping-button">
+                                        <button path="finance/bookkeeping">Bookkeeping</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="Finance__block-offers-offer">
                             <div 
                                 class="Finance__block-offers-offer-analytics"
-                                style="background-image: url('https://img.freepik.com/free-psd/3d-presentation-with-pie-chart-statistics_23-2148938919.jpg?w=826&t=st=1670256276~exp=1670256876~hmac=1e29c5dd36071d24cb3158cbdca0f80e74edc298f62b3c0e4a0040afc998c56c')"
+                                style="background-image: url('https://img.freepik.com/premium-vector/3d-credit-card-money-financial-security-for-online-shopping-on-mobile-phone-online-payment-secure-with-credit-card-and-money-coin-payment-concept-3d-smartphone-vector-icon-render-illustration_412828-1303.jpg?w=1380')"
                             >
-                                <button path="finance/analytics">Analytics</button>
+                                <div class="Finance__block-offers-offer-analytics-animate">
+                                    <div class="Finance__block-offers-offer-analytics-title">Analytics</div>
+                                    <div class="Finance__block-offers-offer-analytics-text">
+                                        Analytics will allow you to see and analyze your costs.
+                                    </div>
+                                    <div class="Finance__block-offers-offer-analytics-button">
+                                        <button path="finance/analytics">Analytics</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

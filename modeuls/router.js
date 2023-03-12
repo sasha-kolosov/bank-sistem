@@ -22,7 +22,13 @@ class Router {
 
             for(let i = 0; i < this.path.length; i++) {
                 this.path[i].addEventListener('click', () => {
-                    window.location.hash = `/${this.path[i].getAttribute('path')}`
+                    const queryPath = `${this.path[i].getAttribute('path')}`.split('?')
+                    if(queryPath.length == 1) {  
+                        window.location.hash = `/${queryPath[0]}`
+                    } else {
+                        window.localStorage.setItem('query', queryPath[1])
+                        window.location.hash = `/${queryPath[0]}`
+                    } 
                 })
             }
 

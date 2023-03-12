@@ -4,15 +4,15 @@ DIV.Finance {
 
 DIV.Finance__container {
     width: 100%;
-    padding-top: 100px;
+    padding-top: var(--container-header-padding);
     display: flex;
     justify-content: center;
 }
 
 DIV.Finance__block {
-    width: 1400px;
-    height: 740px;
-    background-color: rgb(247, 247, 247);
+    width: var(--container-width);
+    height: var(--container-height);
+    background-color: var(--container-background-color);
     border-radius: 16px;
     padding: 50px;
     box-shadow: 0 3px 14px rgb(245, 245, 245);
@@ -20,8 +20,9 @@ DIV.Finance__block {
 
 DIV.Finance__block-offers {
     width: 100%;
+    margin-left: 50px;
     height: 400px;
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
 }
 
@@ -35,20 +36,38 @@ DIV.Finance__block-offers-offer-analytics {
     width: 340px;
     height: 420px;
     border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    background-size: cover;
+    transition: all .3s linear;
     background-repeat: no-repeat;
-    align-items: flex-end;    
-    padding-bottom: 30px;
-    transition: all .4s linear;
+    background-size: cover;
+    position: relative;
+}
+
+DIV.Finance__block-offers-offer-cards-animate,
+DIV.Finance__block-offers-offer-bookkeeping-animate,
+DIV.Finance__block-offers-offer-analytics-animate {
+    width: 340px;
+    height: 60px;
+    border-radius: 16px;
+    transition: all .6s linear;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    overflow: hidden;
+    padding: 25px;
+}
+
+DIV.Finance__block-offers-offer-cards:hover DIV.Finance__block-offers-offer-cards-animate,
+DIV.Finance__block-offers-offer-bookkeeping:hover DIV.Finance__block-offers-offer-bookkeeping-animate,
+DIV.Finance__block-offers-offer-analytics:hover DIV.Finance__block-offers-offer-analytics-animate {
+    height: 420px;
+    background-color: #FDE4C5;
 }
 
 DIV.Finance__block-offers-offer-cards:hover,
 DIV.Finance__block-offers-offer-bookkeeping:hover,
 DIV.Finance__block-offers-offer-analytics:hover {
-    /* box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5); */
-    box-shadow: 0px 5px 19px 2px #e9e9e9;
+    box-shadow: 0 3px 14px rgb(204, 204, 204);
 }
 
 DIV.Finance__block-offers-offer-cards BUTTON,
@@ -65,14 +84,34 @@ DIV.Finance__block-offers-offer-analytics BUTTON {
     cursor: pointer;
 }
 
-DIV.Finance__block-offers-offer-cards BUTTON {
-    background-color: #fff176;
+DIV.Finance__block-offers-offer-cards BUTTON,
+DIV.Finance__block-offers-offer-bookkeeping BUTTON,
+DIV.Finance__block-offers-offer-analytics BUTTON {
+    background-color: white;
 }
 
-DIV.Finance__block-offers-offer-bookkeeping BUTTON {
-    background-color: #fff3e0;
+DIV.Finance__block-offers-offer-cards-title,
+DIV.Finance__block-offers-offer-bookkeeping-title,
+DIV.Finance__block-offers-offer-analytics-title {
+    text-align: center;
+    height: 60px;
+    font-size: 28px;
 }
 
-DIV.Finance__block-offers-offer-analytics BUTTON  {
-    background-color: #4caf50;
+DIV.Finance__block-offers-offer-cards-button,
+DIV.Finance__block-offers-offer-bookkeeping-button,
+DIV.Finance__block-offers-offer-analytics-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 210px;
+}
+
+DIV.Finance__block-offers-offer-cards-text,
+DIV.Finance__block-offers-offer-bookkeeping-text,
+DIV.Finance__block-offers-offer-analytics-text {
+    height: 50px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 24px;
 }

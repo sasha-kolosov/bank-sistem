@@ -15,6 +15,13 @@
 @import url('../components/shares/shares.css');
 @import url('.././components/settings/settings.css');
 
+:root {
+    --container-width: 1400px;
+    --container-height: 740px;
+    --container-header-padding: 100px;
+    --container-background-color: white;
+}
+
 * {
     margin: 0;
     user-select: none;

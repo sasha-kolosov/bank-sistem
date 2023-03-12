@@ -1,18 +1,17 @@
 const CONFIG = {
     newUser(email, password, phone) {
-        return new ObjectRemaker({
+        return {
             id: 0,
             name: '',
             surname: '',
             age: 0,
+            email: email,
+            password: password,
+            phone: phone,
             finance: {
                 cards: []
             }
-        }).init({
-            email: email,
-            password: password,
-            phone: phone
-        })
+        }
     },
     elements() {
         if(window.localStorage.getItem('user') === null) {

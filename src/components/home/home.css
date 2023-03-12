@@ -57,8 +57,8 @@ DIV.Home__offers-offer-credits-title,
 DIV.Home__offers-offer-deposits-title,
 DIV.Home__offers-offer-shares-title {
     text-align: center;
-    height: 50px;
-    font-size: 24px;
+    height: 60px;
+    font-size: 28px;
 }
 
 DIV.Home__offers-offer-finance-text,
@@ -66,8 +66,8 @@ DIV.Home__offers-offer-credits-text,
 DIV.Home__offers-offer-deposits-text,
 DIV.Home__offers-offer-shares-text {
     text-align: center;
-    height: 270px;
-    font-size: 16px;
+    height: 260px;
+    font-size: 17px;
     line-height: 24px;
 }
 
