@@ -9,7 +9,7 @@ if(window.localStorage.getItem('users') === null) {
             surname: 'Kolosov',
             age: 16,
             finance: {
-                cards: [1]
+                cards: [1, 5, 6]
             }
         },
         {

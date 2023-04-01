@@ -6,22 +6,22 @@ class Credits {
                     <h1>Credits page</h1>
                     <div class="Credits__block-options">
                         <div class="Credits__block-options-option">
-                            <div path="credits/new-credit?avto">
+                            <div path="credits?credits=avto">
                                 For avto
                             </div>
                         </div>
                         <div class="Credits__block-options-option">
-                            <div path="credits/new-credit">
+                            <div path="credits?credits=studying">
                                 For studying
                             </div>
                         </div>
                         <div class="Credits__block-options-option">
-                            <div path="credits/new-credit">
+                            <div path="credits?credits=home">
                                 For home
                             </div>
                         </div>
                         <div class="Credits__block-options-option">
-                            <div path="credits/new-credit">
+                            <div path="credits?credits=other">
                                 For other
                             </div>
                         </div>

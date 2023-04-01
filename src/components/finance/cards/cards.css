@@ -13,3 +13,23 @@ DIV.Cards__block {
     padding: 50px;
     box-shadow: 0 3px 14px rgb(245, 245, 245);
 }
+
+DIV.Cards__block-container {
+    display: flex;
+    height: 500px;
+    margin-top: 50px;
+}
+
+DIV.Cards__block-nocards {
+    padding-top: 150px;
+    font-size: 20px; 
+    text-align: center;
+    width: 100%;
+    height: 200%;
+}
+
+DIV.Cards__block-container-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}

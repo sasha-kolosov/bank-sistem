@@ -31,6 +31,20 @@ if(window.localStorage.getItem('cards') === null) {
             number: '9001 0000 0000 0003',
             date: '05/18',
             money: 1000.00
-        }
+        },
+        {
+            userId: 1,
+            id: 5,
+            number: '9001 0000 0000 0005',
+            date: '09/13',
+            money: 5000.00
+        },
+        {
+            userId: 1,
+            id: 6,
+            number: '9001 0000 0000 0006',
+            date: '10/22',
+            money: 6700.59
+        },
     ]))
 }

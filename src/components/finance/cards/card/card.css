@@ -1,0 +1,24 @@
+DIV.Card {
+    width: 400px;
+    height: 230px;
+    border-radius: 20px;
+    padding: 20px;
+    background-size: cover;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url('https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?w=1380&t=st=1680205519~exp=1680206119~hmac=5926d260bb2fee7784df8eae6fe1e6c1d6692cf10c54f8e6db8e4908d937b0bc');
+}
+
+DIV.Card__number {
+    height: 80px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+
+DIV.Card__name {
+    padding-top: 90px;
+    padding-left: 10px;
+    font-size: 20px;
+}

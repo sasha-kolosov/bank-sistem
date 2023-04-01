@@ -25,8 +25,10 @@ class Router {
                     const queryPath = `${this.path[i].getAttribute('path')}`.split('?')
                     if(queryPath.length == 1) {  
                         window.location.hash = `/${queryPath[0]}`
+                        window.localStorage.removeItem('query')
                     } else {
-                        window.localStorage.setItem('query', queryPath[1])
+                        const query = JSON.stringify(queryPath[1].split('='))
+                        window.localStorage.setItem('query', query)
                         window.location.hash = `/${queryPath[0]}`
                     } 
                 })
