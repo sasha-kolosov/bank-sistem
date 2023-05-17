@@ -28,7 +28,7 @@ if(window.localStorage.getItem('cards') === null) {
         {
             userId: 4,
             id: 4,
-            number: '9001 0000 0000 0003',
+            number: '9001 0000 0000 0004',
             date: '05/18',
             money: 1000.00
         },
@@ -46,5 +46,12 @@ if(window.localStorage.getItem('cards') === null) {
             date: '10/22',
             money: 6700.59
         },
+        {
+            userId: 1,
+            id: 7,
+            number: '9001 0000 0000 0007',
+            date: '05/05',
+            money: 4390.00
+        }
     ]))
 }

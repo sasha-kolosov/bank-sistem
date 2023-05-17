@@ -18,6 +18,7 @@ DIV.Cards__block-container {
     display: flex;
     height: 500px;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 DIV.Cards__block-nocards {
@@ -32,4 +33,45 @@ DIV.Cards__block-container-item {
     flex: 1;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
+}
+
+DIV.Cards__block-container-item:nth-child(-n+3) {
+    margin-top: 0px;
+}
+
+DIV.Cards__block-conntainer-item-newcard {
+    width: 400px;
+    height: 230px;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border: 2px solid #b2dfdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+DIV.Cards__block-conntainer-item-newcard-plus {
+    text-align: center;
+    font-size: 50px;
+    color: #b2dfdb;
+}
+
+DIV.Cards__block-conntainer-item-transaction {
+    width: 400px;
+    height: 230px;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border: 2px solid #FDE4C5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+DIV.Cards__block-conntainer-item-transaction-img {
+    text-align: center;
+    font-size: 50px;
+    color: #FDE4C5;
 }

@@ -19,6 +19,9 @@ class App {
                     ${ new Settings().render() }
                     ${ new HeaderMedia().render() }
                     ${ new Cards().render() }
+                    ${ new CardInfo().render() }
+                    ${ new CardTransfer().render() }
+                    ${ new NewCard().render() }
                     ${ new Bookkeeping().render() }
                     ${ new Analytics().render() }
                 </div>

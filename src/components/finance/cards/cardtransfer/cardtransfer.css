@@ -1,0 +1,189 @@
+DIV.CardTransfer {
+    width: 100%;
+}
+
+DIV.CardTransfer__container {
+    width: 100%;
+    padding-top: var(--container-header-padding);
+    display: flex;
+    justify-content: center;
+}
+
+DIV.CardTransfer__block {
+    width: var(--container-width);
+    height: var(--container-height);
+    background-color: var(--container-background-color);
+    border-radius: 16px;
+    padding: 50px;
+    box-shadow: 0 3px 14px rgb(245, 245, 245);
+}
+
+DIV.CardTransfer__block-container {
+    height: 400px;
+    display: flex;
+    margin-top: 100px;
+}
+
+DIV.CardTransfer__block-cards,
+DIV.CardTransfer__block-result {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+DIV.CardTransfer__block-cards-slider {
+    width: 400px;
+    height: 190px;
+    background-color: #616161;
+    border-radius: 14px;
+    padding-top: 25px;
+}
+
+DIV.CardTransfer__block-cards-slider-block {
+    width: 400px;
+    height: 100px;
+    overflow: hidden;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+DIV.CardTransfer__block-cards-slider-cards-option {
+    width: 400px;
+    height: 110px;
+    position: absolute;
+}
+
+DIV.CardTransfer__block-cards-slider-cards-option-number {
+    width: 400px;
+    height: 20px;
+    text-align: center;
+    color: #9e9e9e;
+    font-weight: 600;
+}
+
+DIV.CardTransfer__block-cards-slider-cards-option-money {
+    height: 40px;
+    margin-top: 10px;
+    width: 400px;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+
+DIV.CardTransfer__block-cards-slider-dots {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+DIV.CardTransfer__block-cards-slider-dots-dot {
+    width: 20px;
+    height: 4px;
+    margin: 3px;
+    cursor: pointer;
+    background-color: #9e9e9e;
+}
+
+DIV.CardTransfer__block-cards-slider-dots-dot-active {
+    background-color: #b2dfdb;
+}
+
+DIV.CardTransfer__block-cards-cardnumber {
+    height: 120px;
+    width: 400px;
+    border-radius: 14px;
+    background-color: #b2dfdb;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+INPUT.CardTransfer__block-cards-cardnumber-input {
+    width: 370px;
+    height: 50px;
+    padding: 20px;
+    font-size: 17px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+DIV.CardTransfer__block-cards-amount {
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+INPUT.CardTransfer__block-cards-amount-input {
+    width: 400px;
+    height: 50px;
+    padding-bottom: 26px;
+    font-size: 24px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #dadada;
+}
+
+DIV.CardTransfer__block-result-container {
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 3px 14px rgb(233, 233, 233);
+}
+
+DIV.CardTransfer__block-result-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    height: 80px;
+}
+
+DIV.CardTransfer__block-result-button-block {
+    width: 150px;
+    height: 44px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: #b2dfdb;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+DIV.CardTransfer__block-result-button-block:hover {
+    background-color: #80cbc4;
+}
+
+DIV.CardTransfer__block-result-icon {
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: #FDE4C5;
+    color: #616161;
+    margin-top: 40px;
+}
+ 
+DIV.CardTransfer__block-result-username {
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+DIV.CardTransfer__block-result-type {
+    height: 20px;
+    font-size: 16px;
+    color: #9e9e9e;
+    text-align: center;
+}
+
+DIV.CardTransfer__block-result-amount {
+    height: 75px;
+    margin-top: 40px;
+    font-size: 42px;
+    text-align: center;
+    color: #ef5350;
+}

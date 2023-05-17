@@ -9,6 +9,9 @@
 @import url('../components/finance/finance.css');
 @import url('../components/finance/cards/cards.css');
 @import url('../components/finance/cards/card/card.css');
+@import url('../components/finance/cards/cardInfo/cardInfo.css');
+@import url('../components/finance/cards/newCard/newCard.css');
+@import url('../components/finance/cards/cardtransfer/cardtransfer.css');
 @import url('../components/finance/bookkeeping/bookkeeping.css');
 @import url('../components/finance/analytics/analytics.css');
 @import url('../components/credits/credits.css');

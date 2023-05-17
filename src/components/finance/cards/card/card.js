@@ -7,7 +7,7 @@ class Card {
     }
 
     render() {
-        return `<div class="Card" path="finance/cards?finance/cards=${this.id}">
+        return `<div class="Card" path="finance/cards/card?card=${this.id}">
             <div class="Card__number">
                 ${this.number}
             </div>

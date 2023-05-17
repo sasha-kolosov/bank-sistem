@@ -20,6 +20,7 @@ function register() {
                             CONFIG.elements()
                             {
                                 settings()
+                                finance()
                             }
                         }
                     } catch(e) {

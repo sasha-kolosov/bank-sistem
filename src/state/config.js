@@ -32,6 +32,17 @@ const CONFIG = {
             return {
                 settings: {
                     settingsLogoutButton: document.getElementById('settings-container-logout-button')
+                },
+                finance: {
+                    cards: {
+                        cardtransfer: {
+                            cardtransferNumberInput: document.getElementById('cardtransfer-block-cards-cardnumber-input'),
+                            cardtransferUserName: document.getElementById('cardtransfer-block-result-username'),
+                            cardtransferAmountInput: document.getElementById('cardtransfer-block-cards-amount-input'),
+                            cardtransferAmount: document.getElementById('cardtransfer-block-result-amount'),
+                            cardtransferButton: document.getElementById('cardtransfer-block-result-button-block')
+                        }
+                    }
                 }
             }
         }

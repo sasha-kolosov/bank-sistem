@@ -1,0 +1,19 @@
+DIV.CardInfo {
+    width: 100%;
+}
+
+DIV.CardInfo__container {
+    width: 100%;
+    padding-top: var(--container-header-padding);
+    display: flex;
+    justify-content: center;
+}
+
+DIV.CardInfo__block {
+    width: var(--container-width);
+    height: var(--container-height);
+    background-color: var(--container-background-color);
+    border-radius: 16px;
+    padding: 50px;
+    box-shadow: 0 3px 14px rgb(245, 245, 245);
+}

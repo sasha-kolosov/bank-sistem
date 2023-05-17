@@ -23,23 +23,39 @@ class Cards {
         return layout
     }   
 
+    newcard() {
+        const user = (new Connect('user')).get()
+        if(user.finance.cards.length < 5) {
+            return `<div class="Cards__block-container-item">
+                <div class="Cards__block-conntainer-item-newcard" path="finance/cards/newcard">
+                    <div class="Cards__block-conntainer-item-newcard-plus">
+                        <i class="bi bi-plus-lg"></i>
+                    </div>
+                </div>
+            </div>`
+        } else {
+            return ``
+        }
+    }
+
     render() {
-        const query = window.localStorage.getItem('query')
-        if(query === null) {
-            return (`<div class="Cards" page="finance/cards">
-                <div class="Cards__container">
-                    <div class="Cards__block">
-                        <h1>Cards page</h1>
-                        <div class="Cards__block-container">
-                            ${ this.cards() }
+        return (`<div class="Cards" page="finance/cards">
+            <div class="Cards__container">
+                <div class="Cards__block">
+                    <h1>Cards page</h1>
+                    <div class="Cards__block-container">
+                        ${ this.cards() }
+                        ${this.newcard()}
+                        <div class="Cards__block-container-item">
+                            <div class="Cards__block-conntainer-item-transaction" path="finance/cards/cardtransfer">
+                                <div class="Cards__block-conntainer-item-transaction-img">
+                                    <i class="bi bi-currency-exchange"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>`)
-        } else if(false) {
-            return (`<div class="Cards" page="finance/cards"></div>`)
-        } else if(false) {
-            return (`<div class="Cards" page="finance/cards"></div>`)
-        }
+            </div>
+        </div>`)
     }
 }
