@@ -1,4 +1,14 @@
-function login() {
+import settings from './settings-state'
+import finance from './finance-state'
+import Router from '../modeuls/router'
+import App from '../components/app'
+import CONFIG from './config'
+import Message from '../components/message/message'
+import Connect from '../modeuls/connect'
+import Validate from '../modeuls/validate'
+import root from '../index'
+
+export default function login() {
     if(window.localStorage.getItem('user') === null) {
         const users = new Connect('users')
         const state = CONFIG.elements().login

@@ -1,4 +1,7 @@
 const CONFIG = {
+    getOne() {
+        this.elements().login.loginEmail
+    },
     newUser(email, password, phone) {
         return {
             id: 0,
@@ -48,3 +51,5 @@ const CONFIG = {
         }
     }
 }
+
+export default CONFIG

@@ -1,4 +1,6 @@
-class NewTransaction {
+import Connect from "../connect"
+
+export default class NewTransaction {
     constructor(options) {
         this.senderId = options.senderId // from
         this.recipientId = options.recipientId // to

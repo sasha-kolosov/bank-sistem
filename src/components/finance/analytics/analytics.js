@@ -1,4 +1,6 @@
-class Analytics {
+import './analytics.css'
+
+export default class Analytics {
     render() {
         return `<div class="Analytics" page="finance/analytics">
             <div class="Analytics__container">

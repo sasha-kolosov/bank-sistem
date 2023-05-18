@@ -1,4 +1,7 @@
-class CardTransfer {
+import './cardtransfer.css'
+import Connect from '../../../../modeuls/connect'
+
+export default class CardTransfer {
     constructor() {
         this.user = new Connect('user').get()
     }

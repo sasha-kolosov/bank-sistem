@@ -1,4 +1,6 @@
-class HeaderMedia {
+import './header-media.css'
+
+export default class HeaderMedia {
     render() {
         return (`<div class="HeaderMedia" page="header-media">
             <div class="HeaderMedia__container">

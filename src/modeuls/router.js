@@ -1,4 +1,4 @@
-class Router {
+export default class Router {
     constructor() {
         this.pages = document.querySelectorAll('[page]')
         this.path = document.querySelectorAll('[path]')

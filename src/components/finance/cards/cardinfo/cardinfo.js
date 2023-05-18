@@ -1,4 +1,6 @@
-class CardInfo {
+import './cardinfo.css'
+
+export default class CardInfo {
     constructor() {
         this.query = JSON.parse(window.localStorage.getItem('query'))
     }

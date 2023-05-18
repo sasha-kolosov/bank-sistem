@@ -1,4 +1,6 @@
-class Login {
+import './login.css'
+
+export default class Login {
     render() {
         return (`<div page="login">
             <div class="Login">

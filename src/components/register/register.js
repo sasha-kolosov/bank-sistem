@@ -1,4 +1,6 @@
-class Register {
+import './register.css'
+
+export default class Register {
     render() {
         return (`<div page="register">
             <div class="Register">

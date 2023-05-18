@@ -1,4 +1,6 @@
-class Card {
+import './card.css'
+
+export default class Card {
     constructor(options) {
         this.number = options.number
         this.id = options.id

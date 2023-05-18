@@ -1,4 +1,26 @@
-class App {
+import Message from './message/message'
+import Login from './login/login'
+import Register from './register/register'
+import Header from './header/header'
+import Home from './home/home'
+import Finance from './finance/finance'
+import Credits from './credits/credits'
+import Deposits from './deposits/deposits'
+import Shares from './shares/shares'
+import Settings from './settings/settings'
+import HeaderMedia from './header/header-media/header-media'
+import Cards from './finance/cards/cards'
+import CardInfo from './finance/cards/cardinfo/cardinfo'
+import CardTransfer from './finance/cards/cardtransfer/cardtransfer'
+import NewCard from './finance/cards/newcard/newcard'
+import Bookkeeping from './finance/bookkeeping/bookkeeping'
+import Analytics from './finance/bookkeeping/bookkeeping'
+
+import '../styles/main.css'
+
+
+
+export default class App {
     render() {
         if(window.localStorage.getItem('user') === null) {
             return (`

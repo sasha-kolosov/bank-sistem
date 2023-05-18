@@ -1,23 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-@import url('.././components/message/message.css');
-@import url('.././components/login/login.css');
-@import url('.././components/register/register.css');
-@import url('.././components/header/header.css');
-@import url('.././components/header/header-media/header-media.css');
-@import url('../components/home/home.css');
-@import url('../components/finance/finance.css');
-@import url('../components/finance/cards/cards.css');
-@import url('../components/finance/cards/card/card.css');
-@import url('../components/finance/cards/cardInfo/cardInfo.css');
-@import url('../components/finance/cards/newCard/newCard.css');
-@import url('../components/finance/cards/cardtransfer/cardtransfer.css');
-@import url('../components/finance/bookkeeping/bookkeeping.css');
-@import url('../components/finance/analytics/analytics.css');
-@import url('../components/credits/credits.css');
-@import url('../components/deposits/deposits.css');
-@import url('../components/shares/shares.css');
-@import url('.././components/settings/settings.css');
 
 :root {
     --container-width: 1400px;

@@ -1,4 +1,6 @@
-class Header {
+import './header.css'
+
+export default class Header {
     render() {
         return (`<div class="Header">
             <div class="Header__container">

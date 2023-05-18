@@ -1,4 +1,6 @@
-class Credits {
+import './credits.css'
+
+export default class Credits {
     render() {
         return (`<div page="credits" class="Credits">
             <div class="Credits__container">

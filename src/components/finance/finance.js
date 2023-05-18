@@ -1,4 +1,6 @@
-class Finance {
+import './finance.css'
+
+export default class Finance {
     render() {
         return `<div class="Finance" page="finance">
             <div class="Finance__container">

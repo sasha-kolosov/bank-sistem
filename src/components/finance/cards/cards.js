@@ -1,4 +1,8 @@
-class Cards {
+import './cards.css'
+import Connect from '../../../modeuls/connect'
+import Card from './card/card'
+
+export default class Cards {
     cards() {
         const user = (new Connect('user')).get()
 

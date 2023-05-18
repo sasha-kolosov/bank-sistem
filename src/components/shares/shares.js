@@ -1,4 +1,6 @@
-class Shares {
+import './shares.css'
+
+export default class Shares {
     render() {
         return (`<div page="shares" class="Shares">
             <div class="Shares__container">

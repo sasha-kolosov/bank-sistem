@@ -1,4 +1,6 @@
-class Home {
+import './home.css'
+
+export default class Home {
     render() {
         return (`<div class="Home" page="home">
             <div class="Home__container">

@@ -1,4 +1,6 @@
-class Settings {
+import './settings.css'
+
+export default class Settings {
     render() {
         return (`<div class="Settings" page="settings">
             <div class="container">

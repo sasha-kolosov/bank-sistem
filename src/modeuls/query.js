@@ -1,4 +1,4 @@
-class Query {
+export default class Query {
     constructor() {
         this.queries = document.getElementsByClassName('query')
     }
